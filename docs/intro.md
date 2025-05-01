@@ -3,7 +3,7 @@ slug: /
 sidebar_position: 1
 ---
 
-# Welcome to My Knowledge Hub 📚
+# Welcome to my Knowledge Hub 📚
 
 This site is my personal collection of notes, summaries, guides, and other resources.
 
