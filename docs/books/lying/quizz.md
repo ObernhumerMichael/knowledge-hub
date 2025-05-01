@@ -5,6 +5,8 @@ description: "This is a quiz I created based on the key concepts from the book."
 
 # Quiz
 
+[Download this quiz for Anki.](/books/lying/assets/lying.apkg)
+
 ## Introduction
 
 1. **Why does the author consider lying a "royal road to chaos"?**

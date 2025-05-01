@@ -5,6 +5,8 @@ description: "This is a quiz I created based on the key concepts from the book."
 
 # Quiz
 
+[Download this quiz for Anki](/books/make-it-stick/assets/make-it-stick.apkg)
+
 ## General Learning Principles
 
 1. Why is effortful learning more effective than passive rereading?
