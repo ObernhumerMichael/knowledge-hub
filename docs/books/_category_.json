@@ -1,0 +1,8 @@
+{
+  "label": "Books",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "A personal collection of notes and quizzes from the books I've read, created to deepen understanding and revisit key insights."
+  }
+}

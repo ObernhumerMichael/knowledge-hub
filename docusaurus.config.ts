@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Knowledge Hub',
-  tagline: 'My Knowledge Hub',
+  tagline: 'Michaels Knowledge Hub',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
