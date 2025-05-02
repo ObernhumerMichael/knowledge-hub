@@ -95,3 +95,33 @@ This book is still work in progress!
    - Both wealth and economic education can increase greed by justifying antisocial decisions, reducing feelings of guilt, and making dishonest behavior seem more acceptable.
 1. What is necessary to prevent greed from causing large-scale harm?
    - Strong legislation against corruption, accountability for the powerful, and systems that punish greed and reward cooperation.
+
+## Envy
+
+1. Why is envy considered unpleasant compared to other vices?
+   - Unlike lust, greed, or pride, which bring pleasure or satisfaction, envy offers no gratification. It only makes people feel worse by comparing themselves unfavorably to others.
+1. What conditions trigger envy?
+   - The other person is similar in social status.
+   - The comparison feels relevant to our own life.
+   - The advantage seems hard to obtain.
+   - The advantage appears undeserved.
+1. How does envy relate to competence and warmth?
+   - People envy those they see as **highly competent but low in warmth**.
+   - People respected are both competent and warm, while those low in both are scorned, and those warm but incompetent are pitied.
+1. What role does envy play in violent crimes?
+   - Envy can escalate into malicious acts. The acid attack by Mary Konye on Naomi Oni is a key example where long-term envy turned into violent crime.
+1. What brain areas are involved in envy?
+   - Envy activates the **dorsal anterior cingulate cortex (dACC)** (linked to social pain and comparison).
+   - It decreases activity in the **ventral striatum** (reward center).
+   - Chronic envy correlates with a smaller **dorsolateral prefrontal cortex (dlPFC)**, which helps with self-control.
+1. How does social media amplify envy?
+   - Social media presents exaggerated success stories and filtered realities.
+   - Passive users feel more envy and can develop depression.
+   - Platforms like Facebook trigger envy more effectively because they involve close social circles.
+1. What is the difference between envy and schadenfreude?
+   - **Envy** = pain when others do better.
+   - **Schadenfreude** = joy when those we envy fail.
+   - Envy often triggers stronger schadenfreude when a rival falls from grace.
+1. Can envy be beneficial?
+   - Yes, **benign envy** can inspire people to improve, work harder, and close gaps through effort.
+   - However, if unchecked, it can turn into **malicious envy** leading to harmful behaviors.

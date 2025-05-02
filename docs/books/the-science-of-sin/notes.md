@@ -196,3 +196,97 @@ Neuroscience shows humans prefer fairness instinctively, but greed arises throug
 Wealth and certain educations can amplify greed by dulling social consequences.
 Globally, unchecked greed damages societies and ecosystems.
 Solutions lie in stricter regulations and restoring consequences for unethical actions.
+
+## Envy
+
+### Notes
+
+#### The Nature of Envy
+
+- Unlike other vices (lust, greed, pride), envy brings no pleasure.
+- Envy is triggered when someone similar to us has an advantage.
+- We envy peers (friends, family, colleagues), not distant figures like royalty.
+- Envy is unpleasant but varies in intensity — from a prickle to a stab.
+
+#### Triggers of Envy
+
+- Four prerequisites:
+  - Comparable social status.
+  - Relevance to our life.
+  - Difficulty in obtaining the envied thing.
+  - Perception that the advantage is undeserved.
+
+#### Competence & Warmth
+
+- People judged on competence and warmth:
+  - High competence + low warmth → envy.
+  - High in both → respect.
+  - Low in both → scorn.
+  - High warmth + low competence → pity.
+
+#### Case Study: Mary Konye & Naomi Oni
+
+- Mary’s envy of Naomi’s beauty escalated to violence.
+- Led to a sulfuric acid attack causing permanent damage.
+- Example of envy driving extreme, destructive acts.
+
+#### Brain Science
+
+- Envy activates:
+  - **dACC** (anterior cingulate cortex) — social pain, comparison discomfort.
+  - Decreases activity in **ventral striatum** — reducing reward feelings.
+- Dispositional envy correlates with smaller **dlPFC** (self-control area).
+- High emotional intelligence (EQ) helps dampen envy.
+
+#### Origins & Evolution
+
+- Envy arises from social emotions, appearing after self-awareness (18 months).
+- Requires:
+  - Self-awareness.
+  - Theory of mind (others have feelings).
+  - Understanding of social norms.
+- Envy motivates action to correct perceived unfairness (either constructive or destructive).
+
+#### Modern Society & Social Media
+
+- Advertisers exploit envy using celebrities/influencers.
+- Social media ("bragbook") exaggerates peers' success, triggering envy.
+- Passive users (lurkers) are more prone to envy and depression.
+- Case studies show deleting social media can reduce these feelings.
+
+#### Schadenfreude (Pleasure at Others’ Misfortune)
+
+- Opposite of envy: joy at rivals’ failures.
+- Common in sports rivalries, media stories about fallen celebrities.
+- Neuroscience links schadenfreude to ventral striatum activation and reduced empathy (AI suppression).
+- Strong envy → stronger schadenfreude when rivals fail.
+
+#### Benign vs. Malicious Envy
+
+- **Benign envy**:
+  - Inspires self-improvement.
+  - Motivates harder work.
+  - Can turn lazy people productive.
+- **Malicious envy**:
+  - Leads to sabotage, violence, or irrational behaviors (e.g., inheritance feuds, crimes).
+
+### Cues / Questions / Keywords
+
+- Why is envy considered unpleasant compared to other vices?
+- What conditions trigger envy?
+- How does envy relate to competence and warmth?
+- What role does envy play in violent crimes?
+- What brain areas are involved in envy?
+- How does social media amplify envy?
+- What is the difference between envy and schadenfreude?
+- Can envy be beneficial?
+
+### Summary
+
+Envy is a uniquely painful emotion triggered by upward comparison with similar peers.
+Unlike other vices, it offers no pleasure and often leads to irrational or destructive behaviors.
+Religions and philosophers have long warned against it.
+Neuroscience shows envy activates areas linked to social pain and reduced rewards.
+Modern advertising and social media amplify envy by showcasing curated successes, leading some to depression and social withdrawal.
+However, envy can also have a positive side — benign envy — which motivates self-improvement and hard work.
+Balancing this emotion is key to preventing its dark consequences while harnessing its motivational power.
