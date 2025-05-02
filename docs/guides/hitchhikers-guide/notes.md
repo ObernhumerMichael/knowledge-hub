@@ -1033,3 +1033,117 @@ These don’t provide meaningful anonymity and are traceable over time.
 
 - **Tor Alone** = Maximum anonymity, but often impractical (blocked, captchas)  
 - **VPN/Proxy over Tor** = More practical for everyday use (account creation, less blocking), but sacrifices some anonymity due to breaking stream isolation.
+
+### Getting an anonymous VPN/Proxy
+
+**Skip this step if you want to use Tor only or VPN is not an option.**
+
+See [Appendix O: Getting an anonymous VPN/Proxy]
+
+### Note about Plausible Deniability¶
+
+Qubes OS uses LUKS for full disk encryption and it is technically possible to achieve a form of deniability by using detached LUKS headers.
+This is not yet integrated into this guide but you will find an evolving tutorial on how to achieve this here:
+[https://forum.qubes-os.org/t/qubes-os-installation-detached-encrypted-boot-and-header/6205](https://forum.qubes-os.org/t/qubes-os-installation-detached-encrypted-boot-and-header/6205) and some more background information within the Linux Host OS section (see [Note about plausible deniability on Linux]).
+
+### Installation
+
+You will follow the instructions from the official Qubes OS guide:
+[https://www.qubes-os.org/doc/installation-guide/](https://www.qubes-os.org/doc/installation-guide/)
+
+:::warning
+Secure Boot is not supported (see FAQ: [https://www.qubes-os.org/faq/#is-secure-boot-supported](https://www.qubes-os.org/faq/#is-secure-boot-supported)).
+You must disable Secure Boot in your BIOS/UEFI settings before installing.
+:::
+
+#### Steps
+
+1. **Download the latest Qubes OS 4.1.x ISO**  
+  Make sure your hardware is listed as compatible on the Qubes Hardware Compatibility List (HCL).
+2. **Get and verify the Qubes OS Master Signing Key**  
+  Download it from: [https://keys.qubes-os.org/keys/qubes-master-signing-key.asc](https://keys.qubes-os.org/keys/qubes-master-signing-key.asc)
+3. **Prepare a USB key with the Qubes OS ISO file**  
+  Use tools like `dd`, Rufus, or Etcher to write the ISO to the USB stick.
+4. **Install Qubes OS**  
+   Follow the step-by-step guide linked above. During installation:
+   - If you plan to use **Tor or VPN over Tor**, check the option:
+     **"Enabling system and template updates over the Tor anonymity network using Whonix"**
+     This will route all Qubes OS updates through Tor. It slows down updates but increases your anonymity from the start.
+     (If you face issues connecting to Tor because of censorship, use Tor Bridges: [https://www.whonix.org/wiki/Bridges](https://www.whonix.org/wiki/Bridges)
+   - If you plan to use **Tor over VPN** or cannot use Tor, leave this option unchecked.
+5. **Verify the ISO signature**  
+   Before installation, you *must* verify the ISO signature to ensure it hasn't been tampered with.
+   Follow the official verification guide here: [https://www.qubes-os.org/security/verifying-signatures/](https://www.qubes-os.org/security/verifying-signatures/)
+
+   - Get the Qubes master signing key fingerprint from multiple independent sources.
+   - The fingerprint should be:
+     **427F 11FD 0FAA 4B08 0123 F01C DDFA 1A3E 3687 9494**
+     Do not skip this step, even if downloading from the official site.
+
+:::info
+If you cannot use Tor at all, there is no point in installing Whonix VM templates.
+In that case, disable Whonix installation during the initial setup wizard after Qubes installation.
+:::
+
+### Lid Closure Behavior
+
+Unfortunately, Qubes OS does not support hibernation365 which is an issue regarding cold-boot attacks.
+To mitigate those, I highly recommend that you configure Qubes OS to shut down on any power action (power button, lid closure).
+You can do set this from the XFCE Power Manager. Do not use the sleep features.
+
+### Anti Evil Maid (AEM)
+
+:::warning
+If you don’t meet these requirements, skip this step.
+:::
+
+- Intel CPU
+- Legacy BIOS (not UEFI)
+- TPM 1.2
+
+**What it does:**
+
+AEM protects against **Evil Maid attacks** (physical tampering while you're away) using TPM-based boot verification. It needs a USB drive connected directly to **dom0**, which carries some risk.
+
+**Important:**
+
+- Best protection: always keep physical control of your device.
+- AEM is only useful if that's not possible and matches your threat model.
+
+**More info & install:**
+
+- [Qubes AEM guide](https://www.qubes-os.org/doc/anti-evil-maid/)
+- [Original blog post](https://blog.invisiblethings.org/2011/09/07/anti-evil-maid.html)
+- [GitHub repo](https://github.com/QubesOS/qubes-antievilmaid)
+
+### Connect to Public Wi-Fi
+
+Do this **only from a safe place** (see [Anonymizing your MAC address](https://forum.qubes-os.org/t/anonymizing-your-mac-address/19072)).
+
+**Steps:**
+
+1. Left-click the network icon, note the **Wi-Fi SSID**.
+2. Right-click -> **Edit Connections** -> `+` -> **Wi-Fi**.
+3. Enter the SSID.
+4. Set **Cloned MAC Address** to **Random** (note: can be unreliable on some adapters).
+5. Save and connect to the Wi-Fi.
+
+**If Wi-Fi needs registration:**
+
+- Start a **Disposable Fedora Firefox** (`Menu --> Disposable --> Fedora --> Firefox`).
+- Open Firefox and register (anonymously).
+
+### Updating Qubes OS
+
+After you are connected to a Wi-Fi you need to update Qubes OS and Whonix.
+You must keep Qubes OS always updated before conducting any sensitive activities.
+Especially your Browser VMs. Normally, Qubes OS will warn you about updates in the upper right corner with a gear icon.
+As this might take a while in this case due to using Tor, you can force the process by doing the following:
+
+- Click the upper left Applications icon
+- Select Qubes Tools
+- Select Qubes Update
+- Check the "Enable updates for Qubes without known available updates"
+- Select all the Qubes
+- Click Next and wait for updates to complete
+- If you checked the Tor option during install, be patient as this might take a while over Tor

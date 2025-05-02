@@ -288,5 +288,5 @@ Unlike other vices, it offers no pleasure and often leads to irrational or destr
 Religions and philosophers have long warned against it.
 Neuroscience shows envy activates areas linked to social pain and reduced rewards.
 Modern advertising and social media amplify envy by showcasing curated successes, leading some to depression and social withdrawal.
-However, envy can also have a positive side — benign envy — which motivates self-improvement and hard work.
+However, envy can also have a positive side - benign envy - which motivates self-improvement and hard work.
 Balancing this emotion is key to preventing its dark consequences while harnessing its motivational power.
