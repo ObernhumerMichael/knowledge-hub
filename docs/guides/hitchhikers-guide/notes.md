@@ -98,19 +98,19 @@ Advanced attacks like **correlation** and **timing analysis** can de-anonymize y
 - Use **VPN over Tor** (or **Tor over VPN**) to add layers and confuse correlation attempts.
 - Use **public or residential Wi-Fi** for added unlinkability.
 
-**Important Notes:**
+:::warning[Important Notes]
 
 - Global surveillance adversaries (e.g., NSA) can still break anonymity with enough data.
 - Tor usage **alone** might flag you as suspicious in some contexts.
 - Tools like behavioral analysis or Wi-Fi/Bluetooth tracking can still deanonymize you indirectly.
+
+:::
 
 For more, check out:
 
 - [Attacks on Tor GitHub](https://github.com/Attacks-on-Tor/Attacks-on-Tor)
 - [Tor research survey](https://www.researchgate.net/publication/323627387_Shedding_Light_on_the_Dark_Corners_of_the_Internet_A_Survey_of_Tor_Research)
 - [Tor 0day post](https://www.hackerfactor.com/blog/index.php?/archives/906-Tor-0day-The-Management-Vulnerability.html)
-
-> Bottom line: Tor helps, but **don’t rely on it alone** — especially against well-funded adversaries.
 
 ### Some Devices can be tracked even when offline
 
@@ -123,8 +123,12 @@ Modern devices like:
 can still broadcast Bluetooth signals even when turned off.
 Nearby online devices can pick this up, making offline tracking possible.
 
-**TL;DR:** Don’t bring these devices during sensitive activities or put them in a Faraday pouch.
+:::note[TL;DR]
+
+Don’t bring these devices during sensitive activities.
 "Off" doesn’t mean invisible.
+
+:::
 
 ## Your Hardware Identifiers
 
@@ -152,10 +156,18 @@ Whenever you connect to a mobile network, **both are logged** by operators and o
 - Avoid reusing phones or SIMs.
 - Consider **anonymous online SIM services** that accept crypto (like Monero).
 
-**Note:** Some "privacy" phones (e.g., Purism Librem) **still don’t support IMEI randomization**, so full anonymity is tricky.
+:::warning
 
-**TL;DR:** IMEI + IMSI = uniquely trackable.
+Some "privacy" phones (e.g., Purism Librem) **still don’t support IMEI randomization**, so full anonymity is tricky.
+
+:::
+
+:::note[TL;DR]
+
+IMEI + IMSI = uniquely trackable.
 Use a truly separate device + SIM for sensitive actions.
+
+:::
 
 ### Your Wi-Fi or Ethernet MAC address¶
 
@@ -177,8 +189,12 @@ Every device with Wi-Fi or Ethernet has a **MAC address** — a unique ID for yo
 - **macOS does not support MAC randomization** — not ideal for privacy.
 - Avoid using your personal device for sensitive activities.
 
-**TL;DR:** MAC addresses can silently link you to a device and place.
+:::note[TL;DR]  
+
+MAC addresses can silently link you to a device and place.
 Use MAC randomization or separate hardware.
+
+:::
 
 ### Your Bluetooth MAC Address
 
@@ -199,8 +215,12 @@ Your **Bluetooth MAC** is another unique identifier — like your Wi-Fi MAC, but
 - **Disable Bluetooth** entirely in BIOS/UEFI if possible — or via your OS if not.
 - On **Windows 10**, toggle the Bluetooth device in *Device Manager* to force address randomization.
 
-**TL;DR:** Bluetooth tracking is less risky than Wi-Fi MAC tracking but still a concern.
+:::note[TL;DR]
+
+Bluetooth tracking is less risky than Wi-Fi MAC tracking but still a concern.
 Disable it if not needed.
+
+:::
 
 ## Your CPU
 
@@ -324,7 +344,11 @@ Tech helps, but behavior matters most.
     - Vary mouse/click behavior
     - Don’t use your usual site/app flow or bookmarks
 
-> You’re playing a role. Don’t leave behavioral breadcrumbs.
+:::note
+
+You’re playing a role. Don’t leave behavioral breadcrumbs.
+
+:::
 
 ### IRL and OSINT
 
@@ -349,7 +373,11 @@ Over time, those added up.
 
 You should never share real individual experiences/details using your anonymous identities that could later lead to finding your real identity.
 
-> Every post is a puzzle piece. Don’t let them add up.
+:::note
+
+Every post is a puzzle piece. Don’t let them add up.
+
+:::
 
 ### Your Face, Voice, Biometrics and Pictures
 
@@ -399,8 +427,12 @@ These only reduce risk—they don’t guarantee protection:
 
 But remember: **trying too hard to hide** can make you more suspicious and lead to **human review**.
 
-**TL;DR:** Modern surveillance can identify you by **how you move, talk, look, and behave**.
+:::note[TL;DR]
+
+Modern surveillance can identify you by **how you move, talk, look, and behave**.
 Tools exist to reduce exposure, but none guarantee invisibility—only mitigation.
+
+:::
 
 ### Phishing and Social Engineering
 
@@ -475,7 +507,7 @@ Malware can exist not just in apps—but deep within your **hardware, firmware**
 - Reflash firmware or BIOS from a trusted source if possible  
 - Use devices that allow disabling manufacturer backdoors (e.g., Coreboot-supported hardware)
 
-Once malware is in firmware or hardware, **detection and removal become extremely difficult**—especially if it’s by the manufacturer itself.
+Once malware is in firmware or hardware, **detection and removal become extremely difficult** - especially if it’s by the manufacturer itself.
 
 ### Your files, documents, pictures, and videos
 
@@ -495,12 +527,16 @@ Even if metadata doesn’t name you, it can show **where and when** you were som
 - **Strip metadata** before uploading (using tools like `exiftool`, `mat2`, or built-in settings)
 - **Always** double-check all files—even plain text—for hidden data
 
+:::warning
+
 Be meticulous.
-Leaked metadata has unmasked identities before—don’t let it happen to you.
+Leaked metadata has unmasked identities before - don’t let it happen to you.
+
+:::
 
 ### Watermarking
 
-#### Pictures, Video and Audio¶
+**Pictures, Video and Audio:**
 
 Even if there are **no visible watermarks**, files from commercial platforms may include **invisible watermarks** to track or identify you.
 
@@ -509,9 +545,13 @@ Even if there are **no visible watermarks**, files from commercial platforms may
 - Watermarks often survive **compression** and **re-encoding**.
 - Devices used to film (e.g., lenses or microphones) can be **fingerprinted**.
 
-**Bottom line**: Avoid using known commercial tools or double-check their watermarking options if you're handling sensitive content.
+:::info
 
-#### Printer Watermarking
+Avoid using known commercial tools or double-check their watermarking options if you're handling sensitive content.
+
+:::
+
+**Printer Watermarking:**
 
 Yes, **your printer might betray you**, even offline.
 
@@ -572,7 +612,7 @@ Every transaction is:
   - Ring signatures
   - Stealth addresses
   - Confidential transactions
-- Still not *perfect* — but the best available for privacy-conscious users.
+- Still not *perfect* - but the best available for privacy-conscious users.
 
 ## Your Cloud Backup and Sync Services
 
@@ -587,9 +627,10 @@ They also scan and index your files for analytics or legal reasons.
 
 ## Microarchitectural Side-channel Deanonymization Attacks
 
-A recently published attack can link your anonymous identity to a known alias, like a public Twitter handle, breaking anonymity—even with good OPSEC.
+A recently published attack can link your anonymous identity to a known alias, like a public Twitter handle, breaking anonymity - even with good OPSEC.
 
-**How It Works**
+**How It Works:**
+
 The attack uses invisible iframes and font fingerprinting to detect what fonts are installed on your system.
 These patterns are unique enough to track users across sessions and link multiple identities together.
 Even privacy features like “Do Not Track” won’t stop it.
@@ -598,17 +639,20 @@ Even privacy features like “Do Not Track” won’t stop it.
 
 - **Use NoScript Browser Extension** (recommended): Blocks scripts and prevents these attacks.
 - **Tor Browser** already blocks the attack by default (via NoScript 11.4.8+).
-
-**Important Notes:**
-
 - Closing all activity tied to your public identity before using an anonymous one is essential.
-- Using separate browsers or VMs alone does not prevent this attack.
+
+:::warning
+
+Using separate browsers or VMs alone does not prevent this attack.
+
+:::
 
 ## Local Data Leaks and Forensics
 
 Law enforcement can extract data from phones and laptops—even if encrypted. This can happen during investigations or random checks like border crossings.
 
-**Smartphones**
+**Smartphones:**
+
 Tools like GrayKey and Cellebrite let police unlock and analyze devices.  
 Read more:  
 
@@ -626,7 +670,7 @@ Read more:
 
 - [Johns Hopkins: Mobile Security Overview](https://securephones.io/main.html)
 
-**Laptops**
+**Laptops:**
 Use full disk encryption, virtualization, and compartmentalization to reduce risk.
 
 ## Bad Cryptography
@@ -664,8 +708,12 @@ Many VPN and email providers claim to have "no-log" policies, but they’re stil
 - Always **use VPNs over Tor** to hide your identity from the provider.
 - Don’t rely solely on provider claims—assume they can be compromised.
 
+:::tip
+
 Trust no one.
 Design your privacy stack under the assumption that "no-log" might just mean "not yet logging."
+
+:::
 
 ## Some Advanced targeted techniques
 
@@ -691,7 +739,8 @@ Even if you have great digital hygiene, **high-skilled adversaries** can still b
 - **Floor Vibrations:** Track people and emotions through footsteps.
 - **Light Bulb Spying:** "Hear" conversations by observing vibrating light bulbs.
 
-**Realistic Threat Level:**  
+**Realistic Threat Level:**
+
 Most individuals aren't targeted like this.  
 **However**, **nation-states**, **corporate espionage**, or **high-value targets** can be.
 
@@ -728,9 +777,12 @@ Most individuals aren't targeted like this.
 - [GitHub](https://github.blog/2021-02-25-2020-transparency-report/)
 - ... and many more.
 
-**Bottom line:**  
+:::danger[Bottom line]
+
 If your adversary is skilled enough and determined enough, no setup is 100% safe.  
 **Stay paranoid, stay careful, but don’t go crazy unless you have to.**
+
+:::
 
 ## General Preparations
 
@@ -774,7 +826,7 @@ Try [useapassphrase.com](https://www.useapassphrase.com/) for examples and entro
 
 Skip this if you don't need to register anonymously on platforms that require phone numbers.
 
-#### Burner Phone
+**Burner Phone:**
 
 - **Buy a basic phone** (ideally a dumbphone with removable battery) **with cash** at a flea market/shop **without CCTV**.
 - **Leave your real phone on at home** to avoid metadata leaks.
@@ -783,14 +835,14 @@ Skip this if you don't need to register anonymously on platforms that require ph
 - Disable Bluetooth, never connect to Wi-Fi, and test the phone elsewhere.
 - Power the phone off, remove the battery (if possible) and put it in a farrady bag when not in use.
 
-#### Anonymous Prepaid SIM
+**Anonymous Prepaid SIM:**
 
 - Harder to get due to ID laws (check [SIM registration wiki](https://prepaid-data-sim-card.fandom.com/wiki/Registration_Policies_Per_Country)).
 - **Buy with cash** and **no ID**, avoid cameras.
 - Recommended: **GiffGaff (UK)** — no ID, lets you change number twice.
 - **Power off the burner** after activation/top-up and before returning home.
 
-#### Online Phone Numbers (Riskier)
+**Online Phone Numbers (Riskier):**
 
 - Only use after securing your anonymous setup.
 - Best paid options (accept Monero, no ID):
@@ -801,7 +853,11 @@ Skip this if you don't need to register anonymously on platforms that require ph
   - [https://sms24.me](https://sms24.me)
 - It is more convenient, cheaper, and less risky to just get a pre-paid SIM card from one of the physical places that still sell them for cash without ID.
 
-> Avoid shady marketplaces and never use your real identity.
+:::warning
+
+Avoid shady marketplaces and never use your real identity.
+
+:::
 
 ### Get a USB key
 
@@ -827,11 +883,13 @@ You’ll need **3-5 different public places** with **free Wi-Fi** (no ID/signup)
 - Hotels with guest Wi-Fi (accessed discreetly)
 - Any spot where you can stay for a while **without standing out**
 
-**Tips:**
+:::tip[Tips]
 
 - **Stay aware** of people filming (TikToks, selfies, etc.)
 - Don’t use the same spot repeatedly—**rotate locations**
 - If possible, **connect from a safe distance** using a long-range Wi-Fi antenna
+
+:::
 
 ## Steps for all routes except Tor and Tails
 
@@ -1052,8 +1110,10 @@ You will follow the instructions from the official Qubes OS guide:
 [https://www.qubes-os.org/doc/installation-guide/](https://www.qubes-os.org/doc/installation-guide/)
 
 :::warning
+
 Secure Boot is not supported (see FAQ: [https://www.qubes-os.org/faq/#is-secure-boot-supported](https://www.qubes-os.org/faq/#is-secure-boot-supported)).
 You must disable Secure Boot in your BIOS/UEFI settings before installing.
+
 :::
 
 #### Steps
@@ -1081,8 +1141,10 @@ You must disable Secure Boot in your BIOS/UEFI settings before installing.
      Do not skip this step, even if downloading from the official site.
 
 :::info
+
 If you cannot use Tor at all, there is no point in installing Whonix VM templates.
 In that case, disable Whonix installation during the initial setup wizard after Qubes installation.
+
 :::
 
 ### Lid Closure Behavior
@@ -1094,7 +1156,9 @@ You can do set this from the XFCE Power Manager. Do not use the sleep features.
 ### Anti Evil Maid (AEM)
 
 :::warning
+
 If you don’t meet these requirements, skip this step.
+
 :::
 
 - Intel CPU
