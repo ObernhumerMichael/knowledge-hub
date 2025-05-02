@@ -7,26 +7,83 @@
  */
 
 /* You can override the default Infima variables here. */
+
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --base: #eff1f5;
+  --mantle: #e6e9ef;
+  --curst: #dce0e8;
+  --text: #4c4f69;
+  --blue: #1e66f5;
+  --red: #d20f39;
+  --green: #40a02b;
+  --peach: #fe640b;
+  --overlay0: #9ca0b0;
+
+  --ifm-color-primary: #8839ef;
+  --ifm-color-primary-dark: #781eed;
+  --ifm-color-primary-darker: #7013e9;
+  --ifm-color-primary-darkest: #5c0fc0;
+  --ifm-color-primary-light: #9854f1;
+  --ifm-color-primary-lighter: #a162f2;
+  --ifm-color-primary-lightest: #b98bf6;
+  --ifm-background-color: --base;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  --ifm-menu-color: var(--text);
+  --ifm-toc-link-color: var(--text);
+  --ifm-navbar-shadow: none;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --base: #1e1e2e;
+  --mantle: #181825;
+  --curst: #11111b;
+  --text: #cdd6f4;
+  --blue: #89b4fa;
+  --red: #f38ba8;
+  --green: #a6e3a1;
+  --peach: #fab387;
+  --overlay0: #6c7086;
+
+  --ifm-color-primary: #cba6f7;
+  --ifm-color-primary-dark: #b580f4;
+  --ifm-color-primary-darker: #aa6df2;
+  --ifm-color-primary-darkest: #8934ed;
+  --ifm-color-primary-light: #e1ccfa;
+  --ifm-color-primary-lighter: #ecdffc;
+  --ifm-color-primary-lightest: #ffffff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.page,
+.pages,
+.blog,
+.wrapper,
+.main,
+.mdx-page,
+.docs-doc-page,
+.docs-tags-list-page,
+.docs-tags-doc-list-page,
+.docs,
+.mobileSidebar,
+.card,
+.navbar-sidebar__item {
+  color: var(--text);
+  background-color: var(--base);
+}
+
+.navbar-sidebar__brand,
+.navbar {
+  background-color: var(--base);
+
+  border-bottom-color: var(--ifm-toc-border-color);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+.footer {
+  background: var(--mantle);
+  color: var(--text);
 }
