@@ -3,6 +3,7 @@ import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
+import { mocha, latte } from './src/theme/prism-catppuccin';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -12,7 +13,7 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://docs.obernhumer.com',
+  url: 'https://knowlege.obernhumer.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -91,8 +92,8 @@ const config: Config = {
       copyright: `Copyright © ${new Date().getFullYear()} Michael Obernhumer Knowledge Hub. Built with Docusaurus.`,
     },
     prism: {
-      theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
+      theme: latte,
+      darkTheme: mocha,
     },
   } satisfies Preset.ThemeConfig,
 };
