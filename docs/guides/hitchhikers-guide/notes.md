@@ -1211,3 +1211,185 @@ As this might take a while in this case due to using Tor, you can force the proc
 - Select all the Qubes
 - Click Next and wait for updates to complete
 - If you checked the Tor option during install, be patient as this might take a while over Tor
+
+### Hardening Qubes OS
+
+Qubes OS sandboxes by design, but you can add extra protection inside VMs (through sandboxing apps):
+
+#### AppArmor (Debian & Whonix VMs)
+
+- **Debian VMs**: [Debian AppArmor Guide](https://wiki.debian.org/AppArmor)
+- **Other Linux VMs**:
+  - [Arch AppArmor Guide](https://wiki.archlinux.org/title/AppArmor)
+  - [Debian Guide](https://wiki.debian.org/AppArmor)
+- **Whonix VMs** (recommended):
+  - [Whonix AppArmor Guide](https://www.whonix.org/wiki/AppArmor)
+  - [Whonix + Qubes AppArmor](https://www.whonix.org/wiki/Qubes/AppArmor)
+
+#### SELinux (Fedora VMs)
+
+Fedora uses **SELinux** instead of AppArmor.
+
+- [Fedora SELinux Guide](https://docs.fedoraproject.org/en-US/quick-docs/getting-started-with-selinux/)
+
+Optional but useful for advanced users on Fedora templates.
+
+### Setup the VPN ProxyVM
+
+**Prerequisite:** This guide assumes you are using OpenVPN.
+It works with providers like Mullvad, IVPN, Safing.io, ProtonVPN, etc.
+
+#### 1. Create the VPN ProxyVM
+
+1. Open the **Qubes Applications Menu** (upper left corner).
+2. Click **Create Qubes VM**.
+3. Set:
+   - **Name:** e.g., `VPNGatewayVM`
+   - **Type:** Standalone Qube (copy from template)
+   - **Template:** `debian-11`
+   - **Networking:**
+     - `sys-whonix` (for VPN *over* Tor) — recommended.
+     - `sys-firewall` (for Tor *over* VPN or VPN only).
+4. Under **Advanced**:
+   - Check **Provides network**.
+   - Check **Start qube automatically on boot**.
+5. Click **Create**.
+
+#### 2. Download Your VPN Config Files
+
+- If you can use Tor:
+  - Launch **Disposable Tor Browser** via the Applications Menu.
+  - Download your VPN provider’s OpenVPN config files (usually `.zip`).
+- If you cannot use Tor:
+  - Launch a regular **Disposable VM** browser.
+  - Download the VPN config files.
+- When done:
+  - Right-click the downloaded file and **send** it to your new `VPNGatewayVM`.
+
+#### 3. Configure the VPN ProxyVM
+
+1. Open **Files** in your `VPNGatewayVM`.
+2. Navigate to `QubesIncoming > dispXXXX` (your disposable VM).
+3. Extract the downloaded VPN config `.zip`.
+
+##### Install OpenVPN
+
+Open a terminal in `VPNGatewayVM` and run:
+
+```bash
+sudo apt-get update
+sudo apt-get install openvpn
+```
+
+##### Copy and Edit Configs
+
+1. Copy VPN config files to `/etc/openvpn/`:
+
+   ```bash
+   sudo cp /path/to/your/configs/*.ovpn /etc/openvpn/
+   ```
+
+2. Edit each `.ovpn` file:
+
+   ```bash
+   sudo nano /etc/openvpn/your-config.ovpn
+   ```
+
+   - Change `proto udp` → `proto tcp`
+   - Change the `port` to a TCP port your VPN supports (e.g., 80 or 443).
+   - Save and exit (`Ctrl+O`, `Enter`, `Ctrl+X`).
+
+##### Enable Auto Start
+
+Edit `/etc/default/openvpn`:
+
+```bash
+sudo nano /etc/default/openvpn
+```
+
+Uncomment this line:
+
+```conf
+AUTOSTART="all"
+```
+
+Save and exit.
+
+#### 4. Add Firewall (Kill Switch)
+
+Edit `/rw/config/qubes-firewall-user-script`:
+
+```bash
+sudo nano /rw/config/qubes-firewall-user-script
+```
+
+Add:
+
+```bash
+virtualif=10.137.0.17  # Your ProxyVM's IP (change if needed)
+vpndns1=10.8.0.1       # VPN DNS 1
+vpndns2=10.14.0.1      # VPN DNS 2
+
+# Block traffic if VPN goes down (Kill Switch)
+iptables -F OUTPUT
+iptables -I FORWARD -o eth0 -j DROP
+iptables -I FORWARD -i eth0 -j DROP
+ip6tables -I FORWARD -o eth0 -j DROP
+ip6tables -I FORWARD -i eth0 -j DROP
+
+# Allow DNS queries to VPN DNS
+iptables -A OUTPUT -d 10.8.0.1 -j ACCEPT
+iptables -A OUTPUT -d 10.14.0.1 -j ACCEPT
+
+# Redirect all DNS queries to VPN DNS
+iptables -F PR-QBS -t nat
+iptables -A PR-QBS -t nat -d $virtualif -p udp --dport 53 -j DNAT --to $vpndns1
+iptables -A PR-QBS -t nat -d $virtualif -p tcp --dport 53 -j DNAT --to $vpndns1
+iptables -A PR-QBS -t nat -d $virtualif -p udp --dport 53 -j DNAT --to $vpndns2
+iptables -A PR-QBS -t nat -d $virtualif -p tcp --dport 53 -j DNAT --to $vpndns2
+```
+
+Save and exit.
+
+#### 5. Reboot the ProxyVM
+
+```bash
+sudo reboot
+```
+
+#### 6. Test VPN Connectivity
+
+- Open a browser **inside your VPN ProxyVM**.
+- Visit your VPN provider’s IP-check page:
+  - Mullvad: [https://mullvad.net/en/check/](https://mullvad.net/en/check/)
+  - IVPN: [https://www.ivpn.net/](https://www.ivpn.net/) (check the banner)
+  - ProtonVPN: [VPN IP Change Guide](https://protonvpn.com/support/vpn-ip-change/)
+
+#### Optional: VPN over Tor Setup
+
+1. Clone a **Disposable Fedora VM** and name it `sys-VPNoverTor`.
+2. In **Qube Settings**:
+   - Set its **NetVM** to your new `VPNGatewayVM`.
+3. Start a browser in your **Whonix Workstation**.
+4. Verify VPN is active (check IP).
+
+#### Optional: Tor over VPN Setup
+
+1. Go to **Qube Settings** of `sys-whonix`.
+2. Set **NetVM** to your `VPNGatewayVM`.
+3. Launch a **Whonix Workstation Disposable VM**.
+4. Open a browser and verify Tor and VPN connectivity.
+
+#### Advanced: VPN over Tor over VPN
+
+Example NetVM chain:
+
+```txt
+User > VPN ProxyVM 1 > sys-whonix (Tor) > VPN ProxyVM 2 > Internet
+```
+
+- ProxyVM 1 = VPN #1
+- sys-whonix = Tor
+- ProxyVM 2 = VPN #2
+
+You can mix and match routes by chaining ProxyVMs and adjusting NetVM settings. Qubes OS makes these combinations flexible and modular.

@@ -87,3 +87,7 @@
   background: var(--mantle);
   color: var(--text);
 }
+
+.breadcrumbs__link {
+  color: var(--text);
+}
