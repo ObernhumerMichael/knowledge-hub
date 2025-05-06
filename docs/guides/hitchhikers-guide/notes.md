@@ -169,7 +169,7 @@ Use a truly separate device + SIM for sensitive actions.
 
 :::
 
-### Your Wi-Fi or Ethernet MAC address¶
+### Your Wi-Fi or Ethernet MAC address
 
 Every device with Wi-Fi or Ethernet has a **MAC address** — a unique ID for your network hardware.
 
@@ -1098,7 +1098,7 @@ These don’t provide meaningful anonymity and are traceable over time.
 
 See [Appendix O: Getting an anonymous VPN/Proxy]
 
-### Note about Plausible Deniability¶
+### Note about Plausible Deniability
 
 Qubes OS uses LUKS for full disk encryption and it is technically possible to achieve a form of deniability by using detached LUKS headers.
 This is not yet integrated into this guide but you will find an evolving tutorial on how to achieve this here:
@@ -1393,3 +1393,49 @@ User > VPN ProxyVM 1 > sys-whonix (Tor) > VPN ProxyVM 2 > Internet
 - ProxyVM 2 = VPN #2
 
 You can mix and match routes by chaining ProxyVMs and adjusting NetVM settings. Qubes OS makes these combinations flexible and modular.
+
+### Setup an Android VM
+
+Because sometimes you want to run mobile Apps anonymously too.
+
+1. **Create the Android Qube:**
+    - Open the Applications menu.
+    - Click **Create Qubes VM**.
+    - Name it (suggestion: *Android*) and pick a label.
+    - Select **Type**: Standalone Qube copied from a template.
+    - Select **Template**: Debian-11.
+    - Select **Networking**:
+      - Choose **sys-whonix** for Tor / VPN over Tor (recommended).
+      - Choose **sys-firewall** for Tor over VPN or no Tor/VPN.
+    - Start the Qube and open a Terminal.
+2. **Install Anbox modules:**
+    - Run: `git clone https://github.com/anbox/anbox-modules.git`
+    - Change directory: `cd anbox-modules`
+    - Run: `./INSTALL.sh`
+    - Reboot the Qube.
+3. **Install Snap and Anbox:**
+    - Install Snap: `sudo apt install snapd`
+    - Install Anbox: `snap install --devmode --beta anbox`
+    - (To update later: `snap refresh --beta --devmode anbox`)
+    - Reboot the Qube.
+4. **Start Anbox (Android emulator):**
+    - Open a terminal and run: `anbox.appmgr`
+    - If it crashes, run it again.
+5. **Install apps (APK files) on Anbox:**
+    - Install ADB: `sudo apt install android-tools-adb`
+    - Start Anbox: `anbox.appmgr`
+    - Download the APK you want to install.
+    - Install the APK: `adb install my-app.apk`
+
+### KeePassXC
+
+You will need somewhere to store your data (logins/passwords, identities, and TOTP information).
+For this purpose, KeePassXC is recommended because of its integrated TOTP feature.
+This is the ability to create entries for 2FA369 authentication with the authenticator feature.
+
+In the context of Qubes OS you should store your sensitive information within the vault Qube:
+
+- First, click the Applications icon (upper left) and select the vault Qube.
+- Click Qubes Settings
+- Select the Applications tab
+- From the list of available applications, add KeePassXC to the list of selected applications.
