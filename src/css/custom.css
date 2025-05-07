@@ -13,11 +13,15 @@
   --mantle: #e6e9ef;
   --curst: #dce0e8;
   --text: #4c4f69;
+  --subtext1: #5c5f77;
+  --subtext0: #6c6f85;
   --blue: #1e66f5;
   --red: #d20f39;
   --green: #40a02b;
   --peach: #fe640b;
+  --yellow: #df8e1d;
   --overlay0: #9ca0b0;
+  --overlay2: #7c7f93;
 
   --ifm-color-primary: #8839ef;
   --ifm-color-primary-dark: #781eed;
@@ -33,6 +37,53 @@
   --ifm-menu-color: var(--text);
   --ifm-toc-link-color: var(--text);
   --ifm-navbar-shadow: none;
+
+  /* admonition */
+
+  --admonition-mix-background: var(--base);
+  --admonition-mix-text: black;
+  --admonition-mix-text-percent: 5%;
+  --admonition-mix-background-percent: 30%;
+
+  /* use the latte colors also for dark mode because they stick out more*/
+  --admonition-note-color: #7c7f93;
+  --admonition-tip-color: #40a02b;
+  --admonition-info-color: #1e66f5;
+  --admonition-warning-color: #df8e1d;
+  --admonition-danger-color: #d20f39;
+
+  /* enable the following to also use the true mocha colors in the dark scheme*/
+  /* 
+  --admonition-note-color: var(--overlay2);
+  --admonition-tip-color: var(--green);
+  --admonition-info-color: var(--blue);
+  --admonition-warning-color: var(--yellow);
+  --admonition-danger-color: var(--red); 
+  */
+
+  --admonition-note-bg: color-mix(in srgb, var(--admonition-note-color) var(--admonition-mix-background-percent), var(--admonition-mix-background));
+  --admonition-note-border: var(--admonition-note-color);
+  --admonition-note-text: color-mix(in srgb, var(--admonition-note-color) var(--admonition-mix-text-percent), var(--admonition-mix-text));
+
+
+  --admonition-info-bg: color-mix(in srgb, var(--admonition-info-color) var(--admonition-mix-background-percent), var(--admonition-mix-background));
+  --admonition-info-border: var(--admonition-info-color);
+  --admonition-info-text: color-mix(in srgb, var(--admonition-info-color) var(--admonition-mix-text-percent), var(--admonition-mix-text));
+
+
+  --admonition-tip-bg: color-mix(in srgb, var(--admonition-tip-color) var(--admonition-mix-background-percent), var(--admonition-mix-background));
+  --admonition-tip-border: var(--admonition-tip-color);
+  --admonition-tip-text: color-mix(in srgb, var(--admonition-tip-color) var(--admonition-mix-text-percent), var(--admonition-mix-text));
+
+
+  --admonition-warning-bg: color-mix(in srgb, var(--admonition-warning-color) var(--admonition-mix-background-percent), var(--admonition-mix-background));
+  --admonition-warning-border: var(--admonition-warning-color);
+  --admonition-warning-text: color-mix(in srgb, var(--admonition-warning-color) var(--admonition-mix-text-percent), var(--admonition-mix-text));
+
+
+  --admonition-danger-bg: color-mix(in srgb, var(--admonition-danger-color) var(--admonition-mix-background-percent), var(--admonition-mix-background));
+  --admonition-danger-border: var(--admonition-danger-color);
+  --admonition-danger-text: color-mix(in srgb, var(--admonition-danger-color) var(--admonition-mix-text-percent), var(--admonition-mix-text));
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -41,11 +92,15 @@
   --mantle: #181825;
   --curst: #11111b;
   --text: #cdd6f4;
+  --subtext1: #bac2de;
+  --subtext0: #a6adc8;
   --blue: #89b4fa;
   --red: #f38ba8;
   --green: #a6e3a1;
   --peach: #fab387;
+  --yellow: #f9e2af;
   --overlay0: #6c7086;
+  --overlay2: #9399b2;
 
   --ifm-color-primary: #cba6f7;
   --ifm-color-primary-dark: #b580f4;
@@ -55,6 +110,14 @@
   --ifm-color-primary-lighter: #ecdffc;
   --ifm-color-primary-lightest: #ffffff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  --admonition-mix-text: white;
+}
+
+
+blockquote {
+  color: var(--subtext0);
+  border-color: var(--subtext0);
 }
 
 .page,
@@ -90,4 +153,60 @@
 
 .breadcrumbs__link {
   color: var(--text);
+}
+
+/* admonition */
+
+.theme-admonition-note {
+  background-color: var(--admonition-note-bg);
+  border-color: var(--admonition-note-border);
+  color: var(--admonition-note-text);
+}
+
+.theme-admonition-note svg path {
+  fill: var(--admonition-note-text);
+}
+
+
+.theme-admonition-info {
+  background-color: var(--admonition-info-bg);
+  border-color: var(--admonition-info-border);
+  color: var(--admonition-info-text);
+}
+
+.theme-admonition-info svg path {
+  fill: var(--admonition-info-text);
+}
+
+
+.theme-admonition-tip {
+  background-color: var(--admonition-tip-bg);
+  border-color: var(--admonition-tip-border);
+  color: var(--admonition-tip-text);
+}
+
+.theme-admonition-tip svg path {
+  fill: var(--admonition-tip-text);
+}
+
+
+.theme-admonition-warning {
+  background-color: var(--admonition-warning-bg);
+  border-color: var(--admonition-warning-border);
+  color: var(--admonition-warning-text);
+}
+
+.theme-admonition-warning svg path {
+  fill: var(--admonition-warning-text);
+}
+
+
+.theme-admonition-danger {
+  background-color: var(--admonition-danger-bg);
+  border-color: var(--admonition-danger-border);
+  color: var(--admonition-danger-text);
+}
+
+.theme-admonition-danger svg path {
+  fill: var(--admonition-danger-text);
 }
