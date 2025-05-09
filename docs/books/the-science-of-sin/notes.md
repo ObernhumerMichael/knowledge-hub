@@ -342,7 +342,8 @@ Balancing this emotion is key to preventing its dark consequences while harnessi
 
 ### Summary
 
-Wrath, one of the cardinal vices, manifests as both impulsive and calculated aggression with deep evolutionary roots: the potential gains of violent conquest historically outweighed the risks, preserving anger in human nature.
-Neurologically, regions like the amygdala, ACC, and prefrontal cortex govern our propensity for and regulation of anger, while testosterone influences early development.
-Psychopathy exemplifies instrumental aggression, marked by empathy deficits and disregard for future consequences, whereas Reactive aggression arises from heightened threat sensitivity and impaired impulse control.
-Societal and legal norms impose proportionality and intent criteria to distinguish justified defense from sinful or criminal wrath, and mature prefrontal circuitry underpins effective anger management in modern contexts.
+Wrath, rooted in evolution, helped humans gain resources and status but comes with destructive risks.
+It is driven by brain regions like the amygdala and ACC, while impulse control depends on the prefrontal cortex.
+Anger shows up as either impulsive (reactive) or planned (instrumental) aggression.
+Psychopaths, lacking empathy and foresight, often show the latter.
+Society manages wrath through legal limits and social rules, and as the brain matures, self-control improves.
