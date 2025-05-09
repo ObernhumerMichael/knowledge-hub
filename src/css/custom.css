@@ -9,32 +9,49 @@
 /* You can override the default Infima variables here. */
 
 :root {
-  --base: #eff1f5;
-  --mantle: #e6e9ef;
-  --curst: #dce0e8;
+  --rosewater: #dc8a78;
+  --flamingo: #dd7878;
+  --pink: #ea76cb;
+  --mauve: #8839ef;
+  --red: #d20f39;
+  --maroon: #e64553;
+  --peach: #fe640b;
+  --yellow: #df8e1d;
+  --green: #40a02b;
+  --teal: #179299;
+  --sky: #04a5e5;
+  --sapphire: #209fb5;
+  --blue: #1e66f5;
+  --lavender: #7287fd;
   --text: #4c4f69;
   --subtext1: #5c5f77;
   --subtext0: #6c6f85;
-  --blue: #1e66f5;
-  --red: #d20f39;
-  --green: #40a02b;
-  --peach: #fe640b;
-  --yellow: #df8e1d;
-  --overlay0: #9ca0b0;
   --overlay2: #7c7f93;
+  --overlay1: #8c8fa1;
+  --overlay0: #9ca0b0;
+  --surface2: #acb0be;
+  --surface1: #bcc0cc;
+  --surface0: #ccd0da;
+  --base: #eff1f5;
+  --mantle: #e6e9ef;
+  --crust: #dce0e8;
 
-  --ifm-color-primary: #8839ef;
+  --ifm-color-primary: var(--mauve);
   --ifm-color-primary-dark: #781eed;
   --ifm-color-primary-darker: #7013e9;
   --ifm-color-primary-darkest: #5c0fc0;
   --ifm-color-primary-light: #9854f1;
   --ifm-color-primary-lighter: #a162f2;
   --ifm-color-primary-lightest: #b98bf6;
+
   --ifm-background-color: --base;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-
   --ifm-menu-color: var(--text);
+  --ifm-menu-color-background-active: var(--surface0);
+
+  /* overlay0 */
+  --ifm-menu-link-sublist-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path fill="rgb(156, 160, 176)" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>');
   --ifm-toc-link-color: var(--text);
   --ifm-navbar-shadow: none;
 
@@ -52,14 +69,6 @@
   --admonition-warning-color: #df8e1d;
   --admonition-danger-color: #d20f39;
 
-  /* enable the following to also use the true mocha colors in the dark scheme*/
-  /* 
-  --admonition-note-color: var(--overlay2);
-  --admonition-tip-color: var(--green);
-  --admonition-info-color: var(--blue);
-  --admonition-warning-color: var(--yellow);
-  --admonition-danger-color: var(--red); 
-  */
 
   --admonition-note-bg: color-mix(in srgb, var(--admonition-note-color) var(--admonition-mix-background-percent), var(--admonition-mix-background));
   --admonition-note-border: var(--admonition-note-color);
@@ -88,21 +97,33 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --base: #1e1e2e;
-  --mantle: #181825;
-  --curst: #11111b;
+  --rosewater: #f5e0dc;
+  --flamingo: #f2cdcd;
+  --pink: #f5c2e7;
+  --mauve: #cba6f7;
+  --red: #f38ba8;
+  --maroon: #eba0ac;
+  --peach: #fab387;
+  --yellow: #f9e2af;
+  --green: #a6e3a1;
+  --teal: #94e2d5;
+  --sky: #89dceb;
+  --sapphire: #74c7ec;
+  --blue: #89b4fa;
+  --lavender: #b4befe;
   --text: #cdd6f4;
   --subtext1: #bac2de;
   --subtext0: #a6adc8;
-  --blue: #89b4fa;
-  --red: #f38ba8;
-  --green: #a6e3a1;
-  --peach: #fab387;
-  --yellow: #f9e2af;
-  --overlay0: #6c7086;
   --overlay2: #9399b2;
+  --overlay1: #7f849c;
+  --overlay0: #6c7086;
+  --surface2: #585b70;
+  --surface1: #45475a;
+  --surface0: #313244;
+  --base: #1e1e2e;
+  --mantle: #181825;
+  --crust: #11111b;
 
-  --ifm-color-primary: #cba6f7;
   --ifm-color-primary-dark: #b580f4;
   --ifm-color-primary-darker: #aa6df2;
   --ifm-color-primary-darkest: #8934ed;
@@ -110,25 +131,24 @@
   --ifm-color-primary-lighter: #ecdffc;
   --ifm-color-primary-lightest: #ffffff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  /* overlay0 */
+  --ifm-menu-link-sublist-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path fill="rgb(108, 112, 134)" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>');
 
   --admonition-mix-text: white;
+  /* enable the following to also use the true mocha colors in the dark scheme*/
+  /* 
+  --admonition-note-color: var(--overlay2);
+  --admonition-tip-color: var(--green);
+  --admonition-info-color: var(--blue);
+  --admonition-warning-color: var(--yellow);
+  --admonition-danger-color: var(--red); 
+  */
 }
 
 * {
-  scrollbar-color: var(--ifm-color-primary) transparent;
+  scrollbar-color: var(--mauve) transparent;
 }
 
-/* #__docusaurus [class*='backToTopButton_'] {
-  background-color: var(--overlay0);
-}
-
-#__docusaurus [class*='backToTopButton_']::after {
-  background-color: var(--base);
-}
-
-#__docusaurus [class*='backToTopButton_']:hover {
-  background-color: var(--overlay2);
-} */
 
 blockquote {
   color: var(--subtext0);
@@ -165,6 +185,12 @@ blockquote {
   color: var(--text);
 }
 
+.menu__caret::before {
+  background: var(--ifm-menu-link-sublist-icon) no-repeat center;
+  background-size: 2rem 2rem;
+  filter: none;
+}
+
 .footer {
   background: var(--mantle);
   color: var(--text);
@@ -194,6 +220,49 @@ blockquote {
     background-size: contain;
     background-position: center;
   }
+}
+
+/* back to top button */
+
+#__docusaurus [class*='backToTopButton_'] {
+  background-color: var(--mauve);
+}
+
+#__docusaurus [class*='backToTopButton_']::after {
+  background-color: var(--base);
+}
+
+#__docusaurus [class*='backToTopButton_']:hover {
+  opacity: 0.8;
+}
+
+/* collapse sidebar button */
+
+#__docusaurus [class*='collapseSidebarButton_'] {
+  background-color: var(--mauve);
+}
+
+#__docusaurus [class*='collapseSidebarButton_']:hover {
+  opacity: 0.8;
+}
+
+#__docusaurus [class*='collapseSidebarButton_'] svg path {
+  fill: var(--base);
+}
+
+
+/* expand sidebar button */
+
+#__docusaurus [class*='expandButton_'] {
+  background-color: var(--mauve);
+}
+
+#__docusaurus [class*='expandButton_']:hover {
+  opacity: 0.8;
+}
+
+#__docusaurus [class*='expandButton_'] svg path {
+  fill: var(--base);
 }
 
 /* admonition */

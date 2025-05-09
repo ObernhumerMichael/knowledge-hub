@@ -81,7 +81,7 @@ const config: Config = {
     },
     docs: {
       sidebar: {
-        hideable: true,
+        hideable: false,
       }
     },
     footer: {
