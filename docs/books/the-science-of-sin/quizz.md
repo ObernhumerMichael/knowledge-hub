@@ -125,3 +125,16 @@ This book is still work in progress!
 1. Can envy be beneficial?
    - Yes, **benign envy** can inspire people to improve, work harder, and close gaps through effort.
    - However, if unchecked, it can turn into **malicious envy** leading to harmful behaviors.
+
+## Wrath
+
+1. What brain region is most associated with the urge for revenge?
+   - The anterior cingulate cortex (ACC) – stronger ACC activation correlates with a greater desire for retaliation.
+1. How does evolutionary theory explain the retention of wrath in humans?
+   - Wrath conferred survival advantages by enabling resource acquisition and reproductive opportunities despite high risks.
+1. What distinguishes instrumental aggression from reactive aggression?
+   - Instrumental aggression is cold, goal‑directed violence; reactive aggression is impulsive, emotional response to perceived provocation.
+1. Why are psychopaths less deterred by potential consequences of violence?
+   - They lack emotional empathy (including for their future selves) and have dysfunctional decision‑making circuitry in the OFC.
+1. How does the legal system differentiate between permissible and excessive violence?
+   - By evaluating proportionality, intent to kill, and whether the act was impulsive or premeditated when sentencing.

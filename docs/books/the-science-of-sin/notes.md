@@ -25,7 +25,7 @@ This book is still work in progress!
 - Belief helps us to cooperate with the OutGroup.
 - When a belief system places constraint on what other people should and shouldn’t think, it goes too far, particularly when used to sanction violence.
 
-### Cues / Questions / Keywords
+### Questions
 
 - What is Neuroplasticity?
 - What is InGroup and OutGroup?
@@ -57,7 +57,7 @@ Religion fostered group membership, but what will fill the gap with the increasi
 - Neglectful- & Helicopter parents prevent the child from forming a healthy independent sense of self.
   - There is also trouble when feedback is framed in absolute terms that sound much more permanent: "You are such a naughty child"
 
-### Cues / Questions / Keywords
+### Questions
 
 - Why do we need pride?
 - What are the consequences of the sin of pride?
@@ -91,7 +91,7 @@ Parenting has a big impact on the development of narcissism.
   This change is irreversible, regardless of exercise or diet.
 - The environment plays a significant role for obese families.
 
-### Cues / Questions / Keywords
+### Questions / Keywords
 
 - psychological motivations
 - What is gluttony?
@@ -125,7 +125,7 @@ Obesity makes irreversible changes to the brain.
 - Excessive use of pornography is impacting on healthy sexual behaviors.
 - Once loyalty is betrayed and trust is broken, it can never really, truly, be fully recovered.
 
-### Cues / Questions / Keywords
+### Questions / Keywords
 
 - What is white brain matter?
 - How does the brain of a pedophile differ from a normal one?
@@ -152,7 +152,7 @@ Pornography can destroy relationships and encourage bad sexual behavior.
 - It may not be the most destructive form of antisocial behavior, but sloth is a sure-fire way to fall out of favour with the InGroup and find yourself left out in the cold.
 - While there’s nothing wrong with using the digital tools of entertainment in moderation, there are serious potential negative impacts of having so much spare time used up in these sedentary pursuits.
 
-### Cues / Questions / Keywords
+### Questions
 
 - When can sloth be virtuous?
 - How does long-term unemployment impact our personality?
@@ -177,7 +177,7 @@ True sloth isn’t about necessary rest but about shirking meaningful activity, 
 - Focusing on short-term profits in a system that will inevitably go horribly wrong in the long run is possibly one of the most worrying aspects of the sin of greed operating on a global scale.
 - Globalization interferes with the local mechanisms that operate to control individual greed on a smaller scale, rendering them ineffective.
 
-### Cues / Questions / Keywords
+### Questions / Keywords
 
 - How does wealth influence greed?
 - origin of fraud, corruption and theft
@@ -270,7 +270,7 @@ Solutions lie in stricter regulations and restoring consequences for unethical a
 - **Malicious envy**:
   - Leads to sabotage, violence, or irrational behaviors (e.g., inheritance feuds, crimes).
 
-### Cues / Questions / Keywords
+### Questions
 
 - Why is envy considered unpleasant compared to other vices?
 - What conditions trigger envy?
@@ -290,3 +290,59 @@ Neuroscience shows envy activates areas linked to social pain and reduced reward
 Modern advertising and social media amplify envy by showcasing curated successes, leading some to depression and social withdrawal.
 However, envy can also have a positive side - benign envy - which motivates self-improvement and hard work.
 Balancing this emotion is key to preventing its dark consequences while harnessing its motivational power.
+
+## Wrath
+
+### Notes
+
+#### Wrath as a deadly sin
+
+- Realm of excessive anger, aggression, violence.
+- Leads to swift harm and death, separating people from loved ones.
+- Can be hot-headed (impulsive) or cold-calculated (premeditated).
+
+#### Evolutionary "advantage" of anger
+
+- Confrontational aggression could yield resources, mating opportunities, power.
+- Natural selection retained wrath because, despite risks, benefits often outweighed costs in pre‑civilized contexts.
+
+#### Biological bases of anger
+
+- **Amygdala & ACC**: Amygdala generates fear; ACC (anterior cingulate cortex) linked to vengeance.
+- **Testosterone**: Critical in utero and adolescence; adult reductions have limited effect.
+- **Prefrontal cortex** (dlPFC, dmPFC, OFC): Key for impulse control and decision-making; underdevelopment or damage can lead to poor anger regulation.
+
+#### Types of aggression
+
+- **Instrumental/proactive**: Cold, planned violence (e.g., academic shootings).
+- **Reactive**: Hot-headed, impulsive aggression (e.g., road rage, domestic abuse, IED).
+
+#### Psychopathy and violence
+
+- Psychopaths often have smaller, under‑responsive amygdalae and reduced OFC volume.
+- Lack empathy (including for future selves) and disregard long‑term consequences.
+
+#### Social and legal frameworks
+
+- Proportionality principle: Self‑defense violence must match the threat (e.g., Tony Martin vs. Fred Hemstock).
+- Hot‑headed crimes often receive lighter sentences due to perceived lack of future threat; premeditated violence is punished more harshly.
+
+#### Anger management
+
+- Maturation of prefrontal regions into mid‑twenties underlies improved impulse control.
+- Strategies: boundary signaling, “turn the other cheek,” regulated expressions deter antisocial behavior.
+
+### Questions
+
+1. **What brain region is most associated with the urge for revenge?**
+2. **How does evolutionary theory explain the retention of wrath in humans?**
+3. **What distinguishes instrumental aggression from reactive aggression?**
+4. **Why are psychopaths less deterred by potential consequences of violence?**
+5. **How does the legal system differentiate between permissible and excessive violence?**
+
+### Summary
+
+Wrath, one of the cardinal vices, manifests as both impulsive and calculated aggression with deep evolutionary roots: the potential gains of violent conquest historically outweighed the risks, preserving anger in human nature.
+Neurologically, regions like the amygdala, ACC, and prefrontal cortex govern our propensity for and regulation of anger, while testosterone influences early development.
+Psychopathy exemplifies instrumental aggression, marked by empathy deficits and disregard for future consequences, whereas Reactive aggression arises from heightened threat sensitivity and impaired impulse control.
+Societal and legal norms impose proportionality and intent criteria to distinguish justified defense from sinful or criminal wrath, and mature prefrontal circuitry underpins effective anger management in modern contexts.
