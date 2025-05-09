@@ -10,12 +10,10 @@ import { mocha, latte } from './src/theme/prism-catppuccin';
 const config: Config = {
   title: 'Knowledge Hub',
   tagline: 'Michaels Knowledge Hub',
-  favicon: 'img/favicon.ico',
+  favicon: 'icons/notebook.svg',
 
   // Set the production url of your site here
   url: 'https://knowlege.obernhumer.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
@@ -50,10 +48,6 @@ const config: Config = {
           // enable math support
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: false,
         theme: {
@@ -65,27 +59,30 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    // image: 'img/docusaurus-social-card.jpg',
     navbar: {
       title: 'Knowledge Hub',
       logo: {
-        alt: 'Docusaurus Logo',
-        src: 'img/logo.svg',
+        alt: 'Notebook Logo',
+        src: 'icons/notebook.svg',
+        srcDark: 'icons/notebook-dark.svg',
+        href: 'https://knowledge.obernhumer.com',
+        target: '_self',
       },
       items: [
-        // {
-        //   type: 'docSidebar',
-        //   sidebarId: 'tutorialSidebar',
-        //   position: 'left',
-        //   label: 'Tutorial',
-        // },
-        // { to: '/blog', label: 'Blog', position: 'left' },
         {
-          href: 'https://github.com/ObernhumerMichael',
-          label: 'GitHub',
+          title: "GitHub repository",
+          href: 'https://github.com/ObernhumerMichael/knowledge-hub',
+          className: 'header-github-link',
+          'aria-label': 'GitHub repository',
           position: 'right',
         },
       ],
+    },
+    docs: {
+      sidebar: {
+        hideable: true,
+      }
     },
     footer: {
       style: 'dark',

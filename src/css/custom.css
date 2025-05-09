@@ -114,6 +114,21 @@
   --admonition-mix-text: white;
 }
 
+* {
+  scrollbar-color: var(--ifm-color-primary) transparent;
+}
+
+/* #__docusaurus [class*='backToTopButton_'] {
+  background-color: var(--overlay0);
+}
+
+#__docusaurus [class*='backToTopButton_']::after {
+  background-color: var(--base);
+}
+
+#__docusaurus [class*='backToTopButton_']:hover {
+  background-color: var(--overlay2);
+} */
 
 blockquote {
   color: var(--subtext0);
@@ -146,6 +161,10 @@ blockquote {
   border-bottom-style: solid;
 }
 
+.navbar * {
+  color: var(--text);
+}
+
 .footer {
   background: var(--mantle);
   color: var(--text);
@@ -153,6 +172,28 @@ blockquote {
 
 .breadcrumbs__link {
   color: var(--text);
+}
+
+.header-github-link {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    display: flex;
+    background: url("/icons/github-mark.svg") no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  [data-theme='dark'] &::before {
+    background: url("/icons/github-mark-white.svg") no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
 }
 
 /* admonition */
