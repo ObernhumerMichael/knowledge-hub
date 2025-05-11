@@ -1439,3 +1439,241 @@ In the context of Qubes OS you should store your sensitive information within th
 - Click Qubes Settings
 - Select the Applications tab
 - From the list of available applications, add KeePassXC to the list of selected applications.
+
+## Quick note: Correlation vs Attribution
+
+1. **Understand Key Concepts:**
+   - *Correlation* shows that actions happened but doesn't prove *who* did them.
+   - *Attribution* connects actions directly to a person or group, proving responsibility.
+1. **How Attribution Works:**
+   - Digital forensics uses *Indicators of Compromise (IoCs)* like IPs, usernames, and databases.
+   - Traces (like an IP) only show activity, not identity, unless linked to real-world data.
+1. **Common Mistakes Leading to Attribution:**
+   - Leaking real identity while using anonymity tools (e.g., Tor users connecting accounts or leaking identifiable info).
+   - Leaving persistent traces that can be tied back to IRL identity.
+1. **Case Study – NotPetya Attack:**
+   - Widely believed to be Russian state-sponsored but never officially attributed to Russia.
+   - Attackers disguised their operations using ransomware fronts and foreign compromised servers.
+1. **Learn From State Actor Techniques:**
+   - Use layers of anonymity (Tor, VPNs).
+   - Use hacked or stolen infrastructure to mask origin.
+   - Avoid direct links between activity and real identity.
+1. **Practical Takeaways:**
+   - Correlation (e.g., matching IPs) is weak evidence without attribution.
+   - To avoid attribution:
+     - Hide IPs (use VPNs and Tor properly).
+     - Prevent data leaks that can tie actions to your identity.
+     - Practice strict compartmentalization between real identity and anonymous activity.
+     - Regularly audit your operational security (OpSec).
+
+## Methodology to Prevent Anonymity
+
+### Captchas
+
+#### **Why Captchas Target Anonymity**
+
+- Tor/VPN users often get flooded with endless captchas.
+- Even after solving them, Tor users often get blocked anyway.
+- Sites use captchas as a gatekeeper against privacy tools.
+
+#### **How Captchas Fingerprint You**
+
+Modern captchas don’t just check if you clicked the right images — they profile you:
+
+- **Browser fingerprinting** (browser, cookies, extensions, settings).
+- **Cursor movement tracking** (speed, pattern, "human-ness").
+- **Behavior tracking** before/during/after the puzzle.
+
+Even if you hide your IP and clear cookies, they may still uniquely identify you based on interaction patterns.
+
+#### **Known Patterns That Trigger More Captchas**
+
+- Using **Tor** or **VPNs**.
+- Using **ad-blockers** (e.g., uBlock).
+- Using **non-Chromium browsers** (Firefox gets more captchas than Brave).
+- Previously flagged accounts or IP addresses.
+
+#### **Ways to Reduce Captchas**
+
+1. **Use a Chromium-based browser** (e.g., Brave) to reduce Google reCAPTCHAs.
+1. Use **Buster** (browser extension) to auto-solve captchas:
+   - [Buster GitHub](https://github.com/dessant/buster)
+1. For hCaptcha:
+   - Use Cloudflare’s *Accessibility Cookie* → [hCaptcha Accessibility](https://www.hcaptcha.com/accessibility)
+   - Install **Privacy Pass** extension → [Privacy Pass](https://privacypass.github.io/)
+1. **Vary your behavior**:
+   - Don’t move the mouse too perfectly.
+   - Change speed/accuracy to avoid "Captcha Fingerprinting".
+
+#### **Best Practices for Privacy**
+
+- Consider **VPN over Tor** (VPN first, then Tor) to trigger fewer captchas.
+- Optimal: Use a *self-hosted VPN/proxy* over Tor, paid anonymously (e.g., with Monero/cash).
+
+### Phone verification
+
+[see Getting an anonymous phone number](#getting-an-anonymous-phone-number).
+
+### E-Mail verification
+
+#### **Why It’s a Problem Today**
+
+- **Disposable e-mail providers** get flagged (just like open proxies or Tor).
+- Most platforms **block anonymous/disposable emails** at signup.
+- Increasingly, even free email services demand a **phone number** (which can easily be traced back to you).
+
+#### **Recommended Private Email Providers**
+
+(For creating accounts without leaking your identity)
+
+| Provider  | Website                                          | Notes                                     |
+| --------- | ------------------------------------------------ | ----------------------------------------- |
+| MailFence | [https://mailfence.com/](https://mailfence.com/) | Not zero-access; data readable by admins. |
+| Disroot   | [https://disroot.org](https://disroot.org)       | Community-based, same limitation.         |
+| Autistici | [https://autistici.org](https://autistici.org)   | Activist-friendly, but not zero-access.   |
+| Envs.net  | [https://envs.net/](https://envs.net/)           | Smaller privacy-focused host.             |
+
+:::warning
+
+These services are *better* but still not zero-access.
+They can technically read stored emails.
+
+:::
+
+#### **Email Aliasing = Extra Layer of Protection**
+
+To avoid exposing your *real* anonymous email address:
+
+- Use **aliasing services** to create throwaway addresses that forward to your private inbox.
+
+#### Recommended Aliasing Services
+
+| Service         | Website                                            | Notes                                     |
+| --------------- | -------------------------------------------------- | ----------------------------------------- |
+| **SimpleLogin** | [https://simplelogin.io/](https://simplelogin.io/) | Best free tier; flexible options.         |
+| AnonAddy        | [https://anonaddy.com/](https://anonaddy.com/)     | Also strong; recommended by privacy orgs. |
+
+#### **Best Practices**
+
+- Avoid disposable inboxes like *Tempmail* — they’re automatically flagged.
+- Never use a real phone number when setting up an anonymous identity.
+- Use **email aliases** for every service you register with to avoid correlation.
+
+### User details checking¶
+
+Obviously, Reddit does not do this (yet), but Facebook most likely does and will look for "suspicious" things in your details (which could include face recognition).
+
+Some examples:
+
+- IP address from a country different than your profile country.
+- Age in the profile not matching the picture age.
+- Ethnicity in the profile not matching the picture ethnicity.
+- Language not matching the country language.
+- Unknown in anyone else contacts (Meaning nobody else knows you).
+- Locking down privacy settings after signing up.
+- Name that does not match the correct ethnicity/language/country?
+
+### IP Filters
+
+Many platforms block users based on IP addresses. Tor exit nodes are public and easy to block, and VPN IPs are widely known. Tools like Cloudflare make this filtering simple.
+
+Platforms justify this by claiming they block:
+
+- Harmful or illegal activity
+- Trolls or propaganda
+- Traffic that skews their ad data
+
+In reality, they aim to avoid unprofitable or risky users.
+
+#### Bypassing Filters
+
+- **Tor**: Switch identities until you find an exit node that works. Some sites allow Tor logins but block sign-ups and keep permanent logs of signup IPs.
+- **VPNs**: More tolerated but often come with extra CAPTCHAs and challenges.
+
+#### Recommended Approach
+
+- Use **VPN over Tor** for better access and privacy.
+- Best: run your own **self-hosted VPN/proxy over Tor** on a VPS paid with anonymous methods like Monero.
+
+Check this list to see which services block Tor:
+[Services Blocking Tor](https://gitlab.torproject.org/legacy/trac/-/wikis/org/doc/ListOfServicesBlockingTor)
+
+### Browser and Device Fingerprinting
+
+Websites track users through **browser and device fingerprints** — details about your system like screen size, time zone, and graphics hardware.
+This helps them both tailor the user experience and silently track you.
+
+Even big platforms like Google block browsers they find suspicious based on fingerprint checks.
+Tools like **CAPTCHAs** also rely on fingerprinting.
+While some browsers and extensions claim to resist this, even fingerprint resistance can ironically make you more unique ([source](https://palant.info/2020/12/10/how-anti-fingerprinting-extensions-tend-to-make-fingerprinting-easier/)).
+
+#### Common Fingerprint Data
+
+- Browser (User-Agent), OS (Platform), and language
+- Time zone, screen size, fonts
+- Graphics (Canvas, WebGL), audio, CPU, RAM
+- Ad blocker usage, cookie support, permissions (like mic or webcam)
+
+Most systems end up with a **unique fingerprint** unless special precautions are taken.
+This can track you across accounts and sites, even if you block ads and avoid logins.
+
+#### Mitigation Tips
+
+- Use **virtual machines**
+- Follow **browser hardening guides**
+- Use **fingerprint-resistant browsers** (e.g., Brave, Tor Browser)
+
+#### Test Your Fingerprint
+
+- [CreepJS](https://abrahamjuliot.github.io/creepjs/) (best)
+- [Cover Your Tracks](https://coveryourtracks.eff.org/)
+- [Am I Unique](https://amiunique.org)
+- [BrowserLeaks](https://browserleaks.com/)
+- [Device Info](https://www.deviceinfo.me/)
+- [Extension Fingerprints (Chromium)](https://z0ccc.github.io/extension-fingerprints/#)
+
+### Human interaction
+
+Some platforms will add this as a bonus step and require you to have an actual human interaction with a customer care representative.
+Usually by e-mail but sometimes by chat/phone.
+They will want to verify that you exist by asking you to reply to an e-mail/chat/phone call.
+
+It is annoying but quite easy to deal with in our case.
+We are not making bots.
+This guide is for humans making human accounts.
+
+### Financial transactions
+
+Simple and efficient, some platforms will require you to perform a financial transaction to verify your account sometimes under the pretext of verifying your age.
+This could be a credit card verification or an exceedingly small amount bank wire.
+Some will accept a donation in a main cryptocurrency like Bitcoin or Ethereum.
+
+While this might seem innocent, this is obviously an ID verification and de-anonymization method.
+This is just indirectly relying on third-party financial KYC regulations.
+
+This is for instance now the case on YouTube for some European Users383 but also used by services like Amazon that requires a valid payment method for creating an account.
+
+### Sign-in with Some Platform
+
+Many apps now **force or encourage** you to sign in using big platforms like **Google, Facebook, Apple, or Twitter** instead of their own account system.
+Often, this is the default option, while email/password sign-up is hidden using tricky design choices (dark patterns).
+This shifts user verification to those big platforms, assuming you can’t easily make an anonymous account there.
+However, it’s still possible to create such accounts with some effort.
+
+### Facial Recognition and Biometrics
+
+Some crypto platforms, dating apps, and even Facebook/Instagram now require **live facial verification** — like taking a selfie while doing an action or holding your ID.
+Sometimes, they demand it through an **in-app camera** to block fake uploads.
+
+This guide doesn’t fully cover this yet, as it's mainly used on financial sites and certain apps.
+But bypassing it is tough.
+One option is using **deepfake tools** like [FaceSwap](https://github.com/deepfakes/faceswap) to generate matching photos.
+For apps needing live verification, tools like [DeepFaceLive](https://github.com/iperov/DeepFaceLive) can do real-time face swaps, but this is much more complex.
+
+### Manual Reviews
+
+Manual reviews happen when a platform’s staff evaluates your profile based on certain triggers. If you pass, the verdict is usually final, and you avoid future issues.
+
+**Pros**: The decision is often final, leading to fewer complications if you're approved.
+
+**Cons**: If rejected, you may face a permanent ban without appeal. Some platforms, like Instagram, may ghost you, making it impossible to appeal or resolve the issue.
