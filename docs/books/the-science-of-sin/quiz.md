@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-description: "These are my personal notes and key takeaways from the book."
+description: "This is a quiz I created based on the key concepts from the book."
 ---
 
 # Quiz
