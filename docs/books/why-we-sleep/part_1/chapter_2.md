@@ -64,8 +64,6 @@ description: "Explores how substances like caffeine and external factors like tr
 
 1. **What are the two systems that regulate sleep?**
     - The circadian rhythm (24-hour clock) and adenosine sleep pressure.
-1. **What organ controls the circadian rhythm?**
-    - The **suprachiasmatic nucleus (SCN)** in the brain.
 1. **What role does melatonin play in sleep?**
     - It signals darkness and the start of sleep time but does **not cause** sleep directly.
 1. **Why does jet lag occur, and how can melatonin help?**

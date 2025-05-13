@@ -15,36 +15,34 @@ This quiz is work in progress.
 
 ### To Sleep
 
-1. **Why is sleep deprivation dangerous?**
+1. Why is sleep deprivation dangerous?
     - It drastically increases risk for chronic diseases, weakens the immune system, and shortens life.
-1. **What surprising factor causes more car crashes than alcohol?**
+1. What surprising factor causes more car crashes than alcohol?
     - Drowsy driving.
-1. **Why was sleep scientifically misunderstood for so long?**
+1. Why was sleep scientifically misunderstood for so long?
     - It seemed biologically disadvantageous and lacked a clear singular purpose.
-1. **What does sleep benefit in the brain?**
+1. What does sleep benefit in the brain?
     - Memory, emotional regulation, learning, and creativity through dreaming.
-1. **What does Walker argue about sleep’s role in health?**
+1. What does Walker argue about sleep’s role in health?
     - Sleep is the most powerful daily health enhancer we have-more essential than diet or exercise.
 
 ### Caffeine, Jet Lag, and Melatonin
 
-1. **What are the two systems that regulate sleep?**
+1. What are the two systems that regulate sleep?
     - The circadian rhythm (24-hour clock) and adenosine sleep pressure.
-1. **What organ controls the circadian rhythm?**
-    - The **suprachiasmatic nucleus (SCN)** in the brain.
-1. **What role does melatonin play in sleep?**
-    - It signals darkness and the start of sleep time but does **not cause** sleep directly.
-1. **Why does jet lag occur, and how can melatonin help?**
+1. What role does melatonin play in sleep?
+    - It signals darkness and the start of sleep time but does not cause sleep directly.
+1. Why does jet lag occur, and how can melatonin help?
     - Jet lag is a mismatch between internal time and local time; melatonin helps adjust sleep timing, not sleep generation.
-1. **Why is traveling east harder than west?**
+1. Why is traveling east harder than west?
     - Because our biological clock runs longer than 24 hours, making it easier to stay up late than to sleep early.
-1. **How does caffeine affect sleep?**
+1. How does caffeine affect sleep?
     - It blocks adenosine receptors, hiding sleep pressure, and causes poor sleep if consumed too late.
-1. **What is a caffeine crash?**
+1. What is a caffeine crash?
     - A sudden wave of sleepiness when caffeine wears off and adenosine floods receptors.
-1. **Why do night owls have worse health outcomes?**
+1. Why do night owls have worse health outcomes?
     - Society forces early schedules incompatible with their genetics, leading to chronic sleep loss.
-1. **How can you tell if you’re sleep-deprived?**
+1. How can you tell if you’re sleep-deprived?
     - Struggling to stay awake mid-morning or relying on caffeine early in the day are key signs.
-1. **Do the circadian rhythm and adenosine system communicate?**
-    - No - they are **independent** systems that usually align but can diverge (e.g., during all-nighters).
+1. Do the circadian rhythm and adenosine system communicate?
+    - No - they are independent systems that usually align but can diverge (e.g., during all-nighters).
