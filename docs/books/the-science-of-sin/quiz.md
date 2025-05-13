@@ -138,3 +138,20 @@ This book is still work in progress!
    - They lack emotional empathy (including for their future selves) and have dysfunctional decision‑making circuitry in the OFC.
 1. How does the legal system differentiate between permissible and excessive violence?
    - By evaluating proportionality, intent to kill, and whether the act was impulsive or premeditated when sentencing.
+
+## Save Our Souls
+
+1. How does mindfulness counter pride?
+   - It reduces cortisol and strengthens brain areas tied to self-regulation and meta-awareness.
+1. Why is porn problematic for relationships?
+   - It distorts sexual norms, reduces bonding behaviors, and can create real-world dissatisfaction.
+1. How does technology fuel sloth?
+   - Digital distractions trick us into wasting time and reduce cognitive function.
+1. What modern method can suppress greedy impulses?
+   - High-frequency brain stimulation of dlPFC returns decision-making to more pro-social defaults.
+1. How can envy be mitigated?
+   - Avoid comparison triggers, reflect critically on others’ lives, and reduce exposure to curated media.
+1. Why is wrath so dangerous in modern society?
+   - While once adaptive, it can now escalate to violence with severe consequences. The brain's revenge circuitry (ACC) is a major driver.
+1. How can one resist the temptation to cheat?
+   - Focus on long-term consequences and the near-inevitability of exposure; betrayal destroys trust permanently.

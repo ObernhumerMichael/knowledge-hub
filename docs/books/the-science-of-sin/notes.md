@@ -347,3 +347,104 @@ It is driven by brain regions like the amygdala and ACC, while impulse control d
 Anger shows up as either impulsive (reactive) or planned (instrumental) aggression.
 Psychopaths, lacking empathy and foresight, often show the latter.
 Society manages wrath through legal limits and social rules, and as the brain matures, self-control improves.
+
+## Save Our Souls
+
+### Notes
+
+#### **Lancing Lucifer (Pride)**
+
+- **Cultural causes**: Rise of narcissism linked to social media, reality TV, and flawed parenting.
+- **Parenting fix**: Combine unconditional love with clear behavioral boundaries.
+- **Self-esteem pitfalls**: Unconditional praise without merit backfires.
+- **Systemic challenges**: Difficult to regulate media, education, and tech quickly enough to contain narcissism spread.
+
+#### **Get Over Yourself (Pride continued – Mindfulness)**
+
+- **Mindfulness effects**: Reduces cortisol, increases emotional regulation.
+- **Brain changes**: Affects frontopolar cortex (meta-awareness), ACC (social pain), and PFC (self-control).
+- **Ego dissolution**: Key for reducing narcissistic thought patterns.
+- **Therapies**: Mindfulness, paracetamol (for social pain), DBS, and psychedelics (e.g. psilocybin).
+
+#### **Beating Beelzebub (Gluttony)**
+
+- **Physiology**: Hunger hormones (e.g. ghrelin) and poor prefrontal control drive impulsive eating.
+- **Decision fatigue**: Poor food choices are more likely later in the day or when tired.
+- **Teen angle**: Use adolescent idealism against corporate manipulation.
+- **Practical tips**: Eat slow-release carbs, avoid marketing triggers, replace food comfort with oxytocin from social contact.
+
+#### **Avoiding Asmodeus (Lust)**
+
+- **Modern context**: STDs & unplanned pregnancies reduced; focus shifts to porn, cheating, and sex crimes.
+- **Lack of control**: Arousal is automatic; acting on it is a choice.
+- **Drugs**:
+  - Medroxyprogesterone: suppresses libido but has side effects.
+  - SSRIs: mild and safer for adolescents.
+  - GnRH analogues: effective testosterone suppression with ethical concerns.
+- **Porn dangers**: Alters intimacy expectations; addiction undermines real relationships.
+- **Adultery**: Breaks trust permanently; long-term perspective helps resist.
+- **Cultural fix**: Promote bonding-focused sex practices (e.g. Tantra).
+
+#### **Berating Belphegor (Sloth)**
+
+- **Modern sloth = digital addiction**: Looks like productivity but is hollow (doomscrolling, overconsumption).
+- **Cognitive cost**: Phone nearby lowers memory and fluid intelligence.
+- **Solutions**:
+  - Physically separate from devices.
+  - Use tools like K-safe boxes.
+  - Structure distractions like Odysseus (planned constraints).
+  - Rebuild attention span through separation and boredom.
+
+#### **Muzzling Mammon (Greed)**
+
+- **Default is pro-social**: Greed requires override of cooperative instincts.
+- **Intervention**: Transcranial magnetic stimulation of dlPFC reduces selfishness.
+- **Perspective shift**: Even millionaires increasingly reject wealth accumulation as meaningful.
+
+#### **Evading Envy**
+
+- **Root cause**: Unfavorable social comparison.
+- **Ancient solutions**: Gift-giving by winners, ostracism of overachievers.
+- **Modern solutions**:
+  - Quit Facebook.
+  - Avoid celebrity/tabloid content.
+  - Reflect on hidden downsides of others' "perfect" lives.
+  - Cultivate humility and generosity.
+
+#### **Slaying Satan (Wrath)**
+
+- **Neural basis**: Amygdala (fear), ACC (revenge), PFC (inhibition).
+- **Anger types**:
+  - Reactive (hot-headed): impulsive, emotional.
+  - Instrumental (cold): calculated, psychopathic traits.
+- **Anger evolution**: Provided short-term advantage in power/resource struggles.
+- **Legal system**: Premeditated violence punished more than reactive rage.
+- **Anger regulation**:
+  - Develop prefrontal maturity.
+  - Boundary enforcement (nonviolent).
+  - Accept injustice without retaliation.
+
+### Questions
+
+- What parenting style best prevents narcissism?
+- How does mindfulness counter pride?
+- What causes overeating from a brain perspective?
+- Why is porn problematic for relationships?
+- How does technology fuel sloth?
+- What modern method can suppress greedy impulses?
+- How can envy be mitigated?
+- Why is wrath so dangerous in modern society?
+- What makes premeditated violence worse legally than impulsive violence?
+- How can one resist the temptation to cheat?
+
+### Summary
+
+Managing the seven deadly sins through neuroscience involves understanding how modern life, brain systems, and behavior interact.
+Pride thrives on narcissistic feedback loops reinforced by culture and technology, but mindfulness and emotional regulation can reduce its grip.
+Gluttony exploits our reward systems and hormonal triggers, but structured eating and marketing avoidance help.
+Lust, while driven by uncontrollable attraction, can be restrained with long-term thinking and, where necessary, medication.
+Sloth masquerades as harmless screen time, but tools like constraint devices and exercise rituals offer relief.
+Greed overrides our pro-social defaults; mindfulness and neurostimulation can restore balance.
+Envy arises from distorted comparisons-limiting exposure and seeking truth helps.
+Finally, wrath can be reduced by training emotional control and understanding its roots in threat detection.
+These strategies offer hope - not for moral perfection, but for a life more in harmony with others and ourselves.
