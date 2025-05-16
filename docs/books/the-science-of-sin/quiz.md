@@ -5,6 +5,8 @@ description: "This is a quiz I created based on the key concepts from the book."
 
 # Quiz
 
+[Download this quiz for Anki](/books/the-science-of-sin/assets/the-science-of-sin.apkg)
+
 ## In the Beginning
 
 1. What is Neuroplasticity?
