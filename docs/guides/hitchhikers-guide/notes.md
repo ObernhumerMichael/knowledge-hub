@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is a summarized checklist and to-do list aimed at increasing privacy and anonymity on the internet.
+This is a summarized guide aimed at increasing privacy and anonymity on the internet.
 It has been compiled based on the official [Hitchhiker’s Guide to Online Anonymity](https://anonymousplanet.org/guide/) not including the links in the guide.
 Please note that this guide is **neither exhaustive nor guaranteed to be foolproof**.
 Its purpose is to provide a quick overview and actionable steps, **not** to replace the in-depth explanations and context found in the original guide.
@@ -1672,8 +1672,229 @@ For apps needing live verification, tools like [DeepFaceLive](https://github.com
 
 ### Manual Reviews
 
-Manual reviews happen when a platform’s staff evaluates your profile based on certain triggers. If you pass, the verdict is usually final, and you avoid future issues.
+Manual reviews happen when a platform’s staff evaluates your profile based on certain triggers.
+If you pass, the verdict is usually final, and you avoid future issues.
 
 **Pros**: The decision is often final, leading to fewer complications if you're approved.
 
-**Cons**: If rejected, you may face a permanent ban without appeal. Some platforms, like Instagram, may ghost you, making it impossible to appeal or resolve the issue.
+**Cons**: If rejected, you may face a permanent ban without appeal.
+Some platforms, like Instagram, may ghost you, making it impossible to appeal or resolve the issue.
+
+## Getting Online
+
+Now that you understand how you can be tracked and identified, here’s how to go online while staying anonymous.
+
+First, understand this:
+**You can't fully trust anyone or anything** — not ISPs, VPNs, Tor, your devices, or even people.
+So instead of blind trust, **“Trust but verify”** (or take a stricter **Zero-Trust** approach).
+
+Only proceed if:
+
+- You’ve checked your local laws.
+- You know your threat model.
+- You’re in a safe location with public Wi-Fi, no smartphone/smart devices on you, and ideally no CCTV around.
+- You’re prepared and have a plan in place.
+
+**Important**: Most platforms now require phone number verification.
+Your anonymity hinges on the anonymity of that number.
+If the number or burner phone can be linked back to you, you can be de-anonymized.
+
+If you can’t get an anonymous number or SIM, stick to platforms that don’t require phone verification.
+
+### Creating New Identities
+
+To build convincing fake identities (aka "legends"), create detailed backstories including:
+
+- **Personal Info**: Name, age, gender, ethnicity, place/date of birth, residence, nationality, spoken languages.
+- **Life Details**: Education, work experience, hobbies, family, religion, health info, goals, relationship status, personality traits, travel history.
+
+Consistency is critical.
+Every part of the identity must match across platforms.
+
+**Helpful Tools:**
+
+- [FakeNameGenerator.com](https://www.fakenamegenerator.com/)
+- [ThisPersonDoesNotExist.com](https://thispersondoesnotexist.com/)
+- [Generated Photos](https://generated.photos/face-generator) (watch for tracking)
+- [StyleGAN2](https://github.com/NVlabs/stylegan2) for offline face generation
+- [MyHeritage Deep Nostalgia](https://www.myheritage.com/deep-nostalgia) (VPN needed)
+- [Microsoft Face API](https://azure.microsoft.com/en-us/services/cognitive-services/face/#demo) for face similarity
+
+**Tips:**
+
+- **Ethnicity, age, gender, and location** influence how verification systems treat your identity.
+- Identities from Western countries (e.g., Norway, Germany) with EU IPs generally face fewer issues due to GDPR protections.
+- Match your VPN or Tor exit node to your identity's location.
+- Use Brave’s Private Tor tab over Tor Browser for better usability.
+- Avoid big-name employers; choose freelance roles or public sector work.
+- Store identity info (incl. TOTP 2FA secrets) in tools like KeePassXC.
+- Use different phone numbers and emails for each identity.
+- Tailor your writing style to match the identity.
+
+**Tor Exit Node Customization:**
+
+To force Tor to use specific countries or exclude some:
+
+```txt
+ExitNodes {CH},{RU},{UA}
+StrictNodes 1
+
+ExcludeNodes {FR},{DE},{US},{UK}
+```
+
+Edit the `torrc` file (on Tails/Whonix or Tor Browser).
+
+### Checking if Your Tor Exit Node Is Bad
+
+**Skip this if you're using a VPN or proxy over Tor.**
+
+Not all Tor exit nodes are equal—some are blacklisted more heavily than others.
+Here's how to check:
+
+**Steps:**
+
+1. Open the **target website** in a Tor Browser tab.
+1. Click the **Tor Circuit icon** (next to the lock icon in the address bar).
+1. Note the **third IP** (your Exit Node IP).
+1. Open [MX Toolbox – Blacklist Check](https://mxtoolbox.com/blacklists.aspx).
+1. Enter the Exit IP. If it says “You are on a blacklist,” check how many.
+   - **Ideally**: Only 1–2 lists.
+   - **Red flags**: Spamhaus ZEN, DAN TOR, or DAN TOREXIT.
+
+If the IP is fairly clean, go back and use the site.
+If it’s blacklisted, refresh your Tor circuit (Ctrl+Shift+L or restart the browser) to get a new Exit Node and repeat.
+
+### The Real-Name System
+
+Many services—especially those from Microsoft and Facebook—require real names in their Terms of Service (ToS).
+However, in **Germany**, courts have ruled that users are legally allowed to use pseudonyms online (see §13 VI of the 2007 German Telemedia Act).
+ToS cannot override national law.
+
+This guide is intended for **German users living in Germany**.
+In other countries, using a fake name might violate ToS, even if it's not illegal.
+Check your local laws.
+
+Some platforms avoid real-name ToS by requiring verified **payment methods** (e.g.  Visa, PayPal).
+These fall under KYC laws and effectively enforce real-name use anyway—even in places where pseudonyms are allowed.
+
+### About paid services
+
+If you intend to use paid services, privilege those accepting cash payments or Monero payments which you can do directly and safely while keeping your anonymity.
+If the service you intend to buy does not accept those but accepts Bitcoin (BTC), consider the following appendix: [Appendix Z: Paying anonymously online with BTC (or any other cryptocurrency)]
+
+### How to Chat & Share Files Anonymously
+
+When choosing a secure messaging or file-sharing app, prioritize **privacy**, **encryption**, and **anonymity** — not just good UX.
+
+#### 1. End-to-End Encryption (E2EE)
+
+- Only sender and receiver can read messages.
+- Beware: some apps claim E2EE but have gaps (e.g., no protection for **metadata**, or disabled by default).
+- **Open-source** apps or independently audited ones are safer.
+
+#### 2. Don’t Roll Your Own Crypto
+
+- Avoid apps that implement their own cryptography unless widely **peer-reviewed**.
+- Crypto needs academic vetting — not DIY solutions.
+
+#### 3. Forward Secrecy (PFS)
+
+- Uses a **new key per session**, so past conversations stay secure even if one key is compromised.
+- Often missing in group chats or poorly implemented for convenience.
+
+#### 4. Zero-Access Encryption at Rest
+
+- Even **stored data** (like backups or chat logs) is encrypted on your side.
+- The service provider **cannot decrypt** it — this would have prevented cases like the **Cambridge Analytica scandal**.
+
+#### 5. Metadata Protection
+
+- Metadata includes: who you talk to, when, how long, etc.
+- Apps like **Signal** (via features like Sealed Sender) and **Briar** (via Tor + local storage) protect this.
+- Most mainstream apps **leak metadata** heavily.
+
+#### 6. Open Source
+
+- Prefer **open-source** tools so encryption claims can be verified.
+- Transparency > Trust in marketing.
+
+**Choosing the Right Tool:**
+
+If your priorities are **privacy**, **anonymity**, and **open-source transparency**, use:
+
+- **Briar** (best for extreme anonymity, no servers, uses Tor)
+- **Cwtch** (privacy-first, anonymous, decentralized)
+- **OnionShare** (file sharing + messaging over Tor)
+- **Jami** (decentralized, P2P)
+- **Element (Matrix)** — only if configured properly for E2EE and hosted yourself
+- **Gajim/XMPP** — only with secure plugins like **OMEMO** and a trusted server
+
+### How to Share Files Publicly
+
+:::warning
+
+Before sharing, remove any personal or identifying information.
+
+:::
+
+#### Encrypted File Sharing Platforms
+
+- **Cryptpad** ([cryptpad.fr](https://cryptpad.fr))
+  E2EE, free up to 1 GB. Recommended by PrivacyGuides.
+- **Proton Drive** ([proton.me/drive](https://proton.me/drive))
+  E2EE, paid (Unlimited or Mail Plus). Not easy to sign up anonymously (Tor triggers phone/donation verification).
+- **Filen** ([filen.io](https://filen.io))
+  E2EE, free up to 10 GB.
+
+#### Decentralized Option
+
+- **Pinata (IPFS)** ([pinata.cloud](https://www.pinata.cloud))
+  Free IPFS hosting, up to 1 GB.
+
+### Redacting Documents Safely
+
+To share text, images, or video **anonymously**, follow these guidelines:
+
+- **Avoid proprietary software** (e.g., Microsoft Office, Adobe Photoshop) — they may:
+  - Leak telemetry
+  - Add metadata/watermarks
+  - Require identifiable purchases
+- **Use open-source tools** like:
+  - **LibreOffice** (documents, PDFs)
+  - **GIMP** (images)
+  - **Audacity** (audio)
+  - **Flowblade**, **Olive**, **Shotcut**, **OpenShot** (video)
+  - **Vokoscreen** (screen recording)
+  - **VLC** (media playback)
+  - **PDF-Redact Tools** or **LibreOffice** (PDF redaction)
+- For **online collaboration**, prefer:
+  - [Cryptpad.fr](https://cryptpad.fr)
+  - [Etherpad.org](https://etherpad.org)
+  - [Privatebin.net](https://privatebin.net)
+- **Run tools inside Tails or a virtual machine** to reduce risk of leaks.
+
+Before publishing, **sanitize your files** (see [Removing Metadata]).
+
+### Communicating Sensitive Information
+
+If you need to share information anonymously with organizations (e.g., the press), take these precautions:
+
+- Use **SecureDrop** ([https://securedrop.org/](https://securedrop.org/)) over Tor for anonymous, secure communication.
+  - Read their [Source Guide](https://docs.securedrop.org/en/stable/source.html).
+  - Find SecureDrop Tor addresses here: [https://github.com/alecmuffett/real-world-onion-sites#securedrop](https://github.com/alecmuffett/real-world-onion-sites#securedrop).
+- If SecureDrop is unavailable, use **end-to-end encrypted** methods:
+  - **Email with GPG encryption** (ensure recipient’s public key is verified from official sources like verified social media, Keybase, or trusted OpenPGP servers).
+  - Other platforms (e.g., Twitter DMs) encrypted with GPG.
+- **Avoid:**
+  - Sending physical mail (risks DNA/fingerprint leaks).
+  - Phone-number linked apps (Signal, WhatsApp, Telegram).
+  - Voice/video calls.
+  - Revealing any identity clues.
+  - In-person meetings unless absolutely necessary.
+- If you need to reveal your identity later, carefully assess risks and legality, and consider consulting a trusted lawyer.
+
+**Maintenance:**
+
+- Keep anonymous accounts active by logging in regularly.
+- Monitor emails for security notices.
+- Check for identity leaks using [https://haveibeenpwned.com/](https://haveibeenpwned.com/) from a secure environment.
