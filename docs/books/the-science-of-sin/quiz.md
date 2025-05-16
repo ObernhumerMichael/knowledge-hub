@@ -5,10 +5,6 @@ description: "This is a quiz I created based on the key concepts from the book."
 
 # Quiz
 
-:::info
-This book is still work in progress!
-:::
-
 ## In the Beginning
 
 1. What is Neuroplasticity?
@@ -155,3 +151,20 @@ This book is still work in progress!
    - While once adaptive, it can now escalate to violence with severe consequences. The brain's revenge circuitry (ACC) is a major driver.
 1. How can one resist the temptation to cheat?
    - Focus on long-term consequences and the near-inevitability of exposure; betrayal destroys trust permanently.
+
+## Beyond Temptation
+
+1. What is the "sin bundle" theory?
+    - Most sins overlap; pride, envy, greed, and wrath often co-occur, sharing brain mechanisms like the dACC.
+1. How does modern commerce exploit vice?
+    - Advertising fuels pride, envy, and gluttony; the arms and gaming industries monetize wrath.
+1. What is the role of social pain in vice?
+    - Sinful behavior often aims to soothe emotional pain from rejection, failure, or isolation.
+1. What ethical concerns arise with behavioral neurotech?
+    - Potential misuse, coercion, hacking, and erosion of free will and identity.
+1. How can we resist temptation today?
+    - Understand your physiological and emotional state, recognize social pain, and seek prosocial alternatives.
+1. What role can secular society play?
+    - Rebuild community structures that offer support, belonging, and incentives for kindness—like religion once did.
+1. How could sins be “turned against themselves”?
+    - Channel pride and greed to seek connection and prosocial success instead of selfish gratification.

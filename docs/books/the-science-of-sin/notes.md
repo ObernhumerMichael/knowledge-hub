@@ -5,10 +5,6 @@ description: "These are my personal notes and key takeaways from the book."
 
 # Notes
 
-:::info
-This book is still work in progress!
-:::
-
 ## In the Beginning
 
 ### Notes
@@ -448,3 +444,77 @@ Greed overrides our pro-social defaults; mindfulness and neurostimulation can re
 Envy arises from distorted comparisons-limiting exposure and seeking truth helps.
 Finally, wrath can be reduced by training emotional control and understanding its roots in threat detection.
 These strategies offer hope - not for moral perfection, but for a life more in harmony with others and ourselves.
+
+## Beyond Temptation
+
+### Notes
+
+#### Sin Bundles & Shared Brain Roots
+
+- **Sins overlap** (e.g. pride fuels wrath, lust tied to pride).
+- No sin is “purebred”; they often co-occur in “sin bundles.”
+- **dACC (dorsal anterior cingulate cortex)** is central:
+  - Processes **conflict**, **cognitive dissonance**, and **social pain**.
+  - Hyperactivity in dACC may **trigger antisocial behaviors** like revenge.
+  - Possibly the **shared neural hub** for all seven sins.
+
+#### The Social & Economic Exploitation of Sin
+
+- Global **commerce exploits sin**:
+  - **Pride**: "You deserve it" marketing boosts vanity.
+  - **Lust**: Porn & ads breed dissatisfaction, distort intimacy.
+  - **Gluttony**: Overconsumption encouraged from childhood.
+  - **Envy**: Tech drip-feeds product envy (newer, better).
+  - **Wrath**: Games, arms trade, sports merchandise fuel aggression.
+  - **Greed & Sloth**: Wealth = status, convenience = idleness.
+
+#### Technology & Behavioral Intervention
+
+- **Future tools**:
+  - Smartcaps + EEG: detect dACC overdrive (emotional conflict).
+  - AI could **predict and intervene** before antisocial acts.
+  - **TIS (Temporal Interference Stimulation)**: precise, noninvasive brain modulation (still experimental).
+- Goal: **tame**, not erase, temptation—find a **"Goldilocks zone"**.
+
+#### Ethics & Risks
+
+- Risks include:
+  - **Forced brain intervention** (parolees, criminals).
+  - **Hacking** neurotech = malicious behavior manipulation.
+  - Ethical dilemmas around **freedom, consent**, and **identity**.
+
+#### Inner Conflict & Social Pain
+
+- dACC may link sin to **emotional suffering**:
+  - Pride → hypersensitive to rejection.
+  - Greed → a defense against worthlessness.
+  - Lust → compensates for lack of intimacy.
+  - Envy & Wrath → relieve inferiority and humiliation.
+  - Sloth → avoids failure by disengaging.
+  - Gluttony → numbs distress with comfort food.
+
+#### Practical Advice & Secular Solutions
+
+- **Self-awareness**: Check state (hunger, sleep, caffeine, hydration) before acting on impulse.
+- **Social pain = main driver** of sin; healing it reduces antisocial behavior.
+- **Religion**: offers community, belonging, prosocial incentives—secular world needs to replicate this.
+- **Community membership** and **acts of altruism** improve well-being and deter vice.
+
+### Questions
+
+1. What is the "sin bundle" theory?
+1. What brain region is central to sin-related behavior?
+1. How does modern commerce exploit vice?
+1. What is the role of social pain in vice?
+1. What future technology could reduce temptation?
+1. What ethical concerns arise with behavioral neurotech?
+1. How can we resist temptation today?
+1. What role can secular society play?
+1. How could sins be “turned against themselves”?
+
+### Summary
+
+This chapter ties together the neuroscience of sin, showing that antisocial behaviors often arise from emotional pain, especially social rejection, mediated by the dACC.
+Modern life and marketing exploit these weaknesses for profit, but future technologies may help us intervene before we act out.
+Ethical concerns loom large, yet a secular society can fight back by fostering connection, community, and understanding.
+Ultimately, managing inner conflict—not erasing it—can help us resist temptation and choose a more prosocial path.
