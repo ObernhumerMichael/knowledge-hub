@@ -46,3 +46,24 @@ This quiz is work in progress.
     - Struggling to stay awake mid-morning or relying on caffeine early in the day are key signs.
 1. Do the circadian rhythm and adenosine system communicate?
     - No - they are independent systems that usually align but can diverge (e.g., during all-nighters).
+
+### Defining and Generating Sleep
+
+1. What are the observable signs of sleep?
+   - Recumbent posture, low muscle tone, no communication, reversibility, and timing consistency.
+1. What brain structure blocks sensory input during sleep?
+    - The thalamus - it creates a sensory blackout during NREM sleep.
+1. What happens when we cut sleep short?
+    - We disproportionately lose REM sleep, even if total sleep loss is small.
+1. How do brainwaves differ between wakefulness and deep sleep?
+   - Wake = fast, chaotic waves; NREM = slow, rhythmic waves from the frontal lobe.
+1. What is a sleep spindle?
+   - A burst of brain activity during NREM that helps shield sleep from noise.
+1. Why does REM sleep include muscle paralysis?
+   - To prevent acting out dreams, which could be dangerous.
+1. How do REM and NREM sleep support memory?
+   - NREM transfers and filters memories; REM links them and fosters insight.
+1. What is the significance of time distortion in dreams?
+   - Dream time feels longer than real time - due to slow replay of memories in REM.
+1. How do sleep cycles change over the night?
+   - Early cycles are NREM-rich, later ones are REM-rich.
