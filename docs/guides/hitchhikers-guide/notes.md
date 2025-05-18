@@ -1898,3 +1898,194 @@ If you need to share information anonymously with organizations (e.g., the press
 - Keep anonymous accounts active by logging in regularly.
 - Monitor emails for security notices.
 - Check for identity leaks using [https://haveibeenpwned.com/](https://haveibeenpwned.com/) from a secure environment.
+
+## Backing up your work securely
+
+Do not ever upload encrypted file containers with plausible deniability (hidden containers within them) to most cloud services (iCloud, Google Drive, OneDrive, Dropbox) without safety precautions.
+This is because most cloud services keep backups/versioning of your files, and such backups/versioning of your encrypted containers can be used for differential analysis to prove the existence of a hidden container.
+
+### Selected Files Backups
+
+**Requirements:**
+
+- USB stick or external drive with enough space.
+- Veracrypt (Linux, Windows, macOS).
+
+**Standard Containers:**
+
+- Create a Veracrypt container to store files.
+- Use backup tools or copy files manually.
+- Can be stored anywhere (preferably external storage).
+
+**Hidden Containers (Plausible Deniability):**
+
+- Create an outer volume (decoy) and a hidden volume (real data).
+- Depending on the password, Veracrypt mounts either the decoy or the hidden volume.
+- When modifying the outer volume, enable "Protect hidden volume" and enter both passwords.
+
+**Security Guidelines:**
+
+- Keep only one version of each container. Never let multiple versions exist.
+- Only mount from guest VMs, not host OS.
+- Avoid cloud storage and versioning systems.
+- Wipe USB drives before modifying hidden containers.
+- If host OS is used, clean all traces afterward (logs, recent files, etc.).
+
+### Full Disk/System Backups
+
+Use Clonezilla for full system backups.
+It works reliably on most OSes except macOS, where you should use Time Machine or Disk Utility instead.
+Do not back up a hidden Windows OS—this breaks plausible deniability.
+
+## Online Backups
+
+:::danger[]
+
+**Never upload Veracrypt containers with plausible deniability** to any platform you don’t fully control.
+Cloud services often retain old versions, which can compromise hidden data.
+Only upload **encrypted** files (e.g. Veracrypt with strong passphrases) and **never** trust cloud provider encryption - encrypt locally first.
+
+:::
+
+### File Storage
+
+**Plausible Deniability (Not Recommended Online):**
+
+- Do *not* upload containers with hidden volumes to cloud platforms (Dropbox, Google Drive, etc.).
+- These services often retain historical data, breaking plausible deniability.
+- Only exception: cold storage (never modified after upload).
+
+**Normal Encrypted Files (Allowed):**
+
+- Encrypt locally (e.g. Veracrypt, Cryptomator).
+- Safe to upload to any service *after* encryption.
+- Recommended: privacy-respecting platforms like:
+  - [Cryptpad.fr](https://cryptpad.fr/) – 1GB free
+  - [Filen.io](https://filen.io/) – 10GB free
+
+> Only access these backups from a **secure device or VM**.
+
+**Self-Hosting:**
+
+- Using services like **Nextcloud** is fine if:
+  - You **host anonymously**
+  - You follow privacy best practices
+    See: *Appendix A1: Recommended VPS providers* and *Appendix B2: Monero Disclaimer*.
+
+**Secure Text/Note Storage:**
+
+For storing small pieces of information:
+
+- [PrivateBin](https://privatebin.info/)
+- [CryptPad Notes](https://cryptpad.fr/pad/)
+
+> Protect pads with a password and save the link somewhere secure.
+
+### Synchronizing your files between devices Online¶
+
+To that, the answer is very simple and a clear consensus for everyone: [https://syncthing.net/](https://syncthing.net/)
+Just use SyncThing, it is the safest and most secure way to synchronize between devices, it is free and open-source, and it can easily be used in a portable way without install from a container that needs syncing.
+
+## Covering your tracks
+
+### Understanding HDD vs SSD
+
+- **HDDs** store data magnetically in fixed locations, making secure deletion (e.g., overwriting) straightforward.
+- **SSDs** use internal mechanisms like **wear-leveling**, making secure deletion much harder and traditional tools ineffective.
+
+#### Types of SSDs
+
+- **ATA (SATA)** – often 2.5" format
+- **NVMe (M.2)** – newer and faster
+
+Know your drive type, as deletion methods differ.
+
+#### Wear-Leveling
+
+- SSDs spread writes evenly across blocks to prevent wear.
+- This means **overwriting doesn't guarantee actual erasure**—the drive may just write the new data elsewhere.
+- As a result, **secure deletion tools made for HDDs are useless on SSDs**.
+
+#### TRIM Operations
+
+- **TRIM** tells the SSD which blocks can be erased after a file is deleted.
+- Modern OSes (macOS, Windows, Linux, Qubes) usually enable TRIM by default.
+- **TRIM doesn’t delete data directly**, but marks it for erasure—handled later by the SSD's **garbage collection**.
+
+#### Why TRIM matters
+
+- Without TRIM, deleted data may linger.
+- With TRIM and modern SSDs, **deleted data becomes unreadable (e.g. returns zeroes)** via *Deterministic Zeroes After Trim*.
+
+:::warning
+
+ **Veracrypt containers with plausible deniability should not be used on TRIM-enabled SSDs**, as TRIM can invalidate hidden volumes and break deniability.
+
+:::
+
+#### Garbage Collection
+
+- SSDs periodically clean up blocks marked by TRIM.
+- It **moves valid data** to a new block, then **erases** the old block—permanently removing deleted data.
+- Works better when TRIM is enabled, but operates even without it.
+
+#### Conclusion
+
+- **SSDs + TRIM + Full Disk Encryption = reasonable deletion security**
+- While **not 100% forensically safe**, recovering trimmed SSD data is very difficult and unlikely without high-end tools and expert knowledge.
+- **Use full disk encryption** and make sure **TRIM is enabled** for safe everyday deletion on SSDs.
+
+### How to securely wipe your whole Laptop/Drives
+
+#### SSDs
+
+**Best Methods:**
+
+- Use **BIOS/UEFI Secure Erase** or **Sanitize**.
+- Use tools like **PartedMagic** for easy secure erase.
+- Reinstall OS with **full disk encryption** (LUKS, BitLocker, FileVault).
+
+**Advanced (less reliable due to wear leveling):**
+
+- `dd if=/dev/urandom of=/dev/sdX bs=8M status=progress conv=fsync`
+  *(run twice to target overprovisioned areas)*
+- `wipe -qQ2 /dev/sdX` or `srm -P /dev/sdX` for multi-pass overwrites.
+
+#### HDDs
+
+**Software Wipe:**
+
+- `shred -vzn 3 /dev/sdX`
+- `wipe /dev/sdX`
+- `srm -G /dev/sdX`
+
+**Physical Destruction (best for sensitive data):**
+
+- Open drive, remove and destroy platters.
+
+#### USB Drives / External SSDs
+
+**If SSD:**
+
+- `blkdiscard /dev/sdX` if supported.
+- Otherwise, encrypt or overwrite (`dd` or `shred`).
+
+**If HDD or Flash:**
+
+- `shred -vzn 3 /dev/sdX`
+- Or: `dd if=/dev/zero of=/dev/sdX bs=1M status=progress`
+
+#### Tips
+
+- Always wipe the **entire device**, not just partitions.
+- SSDs: Prefer secure erase or encryption over overwriting.
+- Encrypt drives before use for easier future wiping.
+
+### How to securely delete specific files/folders/data on your HDD/SSD and Thumb drives¶
+
+The same principles from the earlier chapters apply to this one.
+The same issues arise too.
+
+Remember tho that no matter the deletion method you use for any file on any medium (HDD drive, SSD, USB Thumb drive).
+It will probably leave other traces (logs, indexing, shellbags ...) within your system and those traces will also need to be cleaned.
+Also, remember that your drives should be fully encrypted and so this is most likely an extra measure.
