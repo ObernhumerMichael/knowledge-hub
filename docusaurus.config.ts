@@ -1,4 +1,3 @@
-import { themes as prismThemes } from 'prism-react-renderer';
 import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import remarkMath from 'remark-math';
@@ -57,6 +56,7 @@ const config: Config = {
     ],
   ],
 
+
   themeConfig: {
     // Replace with your project's social card
     // image: 'img/docusaurus-social-card.jpg',
@@ -91,6 +91,9 @@ const config: Config = {
     prism: {
       theme: latte,
       darkTheme: mocha,
+    },
+    mermaid: {
+      theme: { light: 'base', dark: 'dark' }, // just a placeholder, will be overwritten dynamically
     },
   } satisfies Preset.ThemeConfig,
 };

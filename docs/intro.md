@@ -15,3 +15,9 @@ You'll find:
 - **And More**: Anything else I find useful and want to keep in one place.
 
 Whether you're here to learn something new, review a topic, or just browse, I hope you find these resources helpful!
+
+```mermaid
+
+flowchart TD
+    Start --> Stop
+```
