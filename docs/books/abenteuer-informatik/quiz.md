@@ -38,3 +38,40 @@ description: "This is a quiz I created based on the key concepts from the book."
 1. **Welchen Sortieralgorithmus sollte man typischerweise für sehr große Datenmengen wählen, und warum?**
     - Für große Datenmengen (z. B. n > 10 000) verwendet man bevorzugt Verfahren mit **O(n log n)** (Quicksort, MergeSort, Heapsort) oder – wenn die Datenverteilung passt – auch Bucketsort (O(n)).
     Quicksort (oder ein Hybrid‐Verfahren wie Introsort) ist in typischen Implementierungen sehr effizient und speicherplatzsparend.
+
+## Kapitel 3 - Ich packe meinen Koffer
+
+1. Was ist das Schatzkisten-Rätsel und welche Problemklasse beschreibt es?
+    - Ein Mann darf zur Belohnung so viele Schätze mitnehmen, wie in eine Kiste passen – das ist eine Form des klassischen **Rucksackproblems**, bei dem der Wert maximiert werden soll, während die Kapazität begrenzt ist.
+2. Warum ist der Brute-Force-Ansatz beim Rucksackproblem ineffizient?
+    - Weil alle möglichen Kombinationen geprüft werden müssen, was zu einem **exponentiellen Zeitaufwand** führt, sobald die Anzahl der Gegenstände oder die Kistengröße steigt.
+3. Wie hilft das Prinzip „Divide et impera“ beim Rucksackproblem?
+    - Das Problem wird in kleinere Teilprobleme zerlegt. Lösungen für kleine Kisten und wenige Objekte werden kombiniert, um größere Lösungen zu erhalten.
+4. Was ist die Grundidee der dynamischen Programmierung im Kontext des Rucksackproblems?
+    - **Alle Teillösungen werden berechnet**, um daraus **schrittweise die optimale Lösung** aufzubauen.
+5. Wie funktioniert die dynamische Programmierung beim Rucksackproblem konkret?
+    - Für jede Kistengröße (0 bis max.) wird berechnet, welcher Wert mit den bisherigen Schätzen erreichbar ist. Neue Schätze verbessern die Lösungen iterativ.
+6. Wie lautet der dynamische Rucksack-Algorithmus in Pseudocode?
+
+```pseudo
+Für jeden Schatz ab dem zweitkleinsten:
+Für jede Kiste A (von klein nach groß):
+    Bestimme Kiste B = A + Größe des Schatzes
+    Wenn (Wert von A + Schatz) > Wert von B:
+    Setze Inhalt von B = Inhalt A + Schatz
+```
+
+7. Was ist der Unterschied zwischen Bottom-up und Top-down?
+    - **Bottom-up:** Beginnt bei kleinen Teilproblemen und baut die Lösung auf.
+    - **Top-down:** Zerlegt das große Problem rekursiv in kleinere.
+8. Was sind die Schritte der vollständigen Induktion?
+    1. **Induktionsanfang**: Aussage gilt für $n = 1$.
+    2. **Induktionsvoraussetzung**: Aussage gilt für $n - 1$.
+    3. **Induktionsschritt**: Daraus folgt Gültigkeit für $n$.
+    4. **Schlussfolgerung**: Aussage gilt für alle $n \geq 1$.
+9. Wo wird das Rucksackproblem in der Praxis angewendet?
+    - **Logistik:** Beladung von Fahrzeugen/Lagerung
+    - **Aufgabenverteilung:** Ressourcen auf Prozesse oder Personen aufteilen
+    - **Budgetierung, Containerstauung, Portfolio-Optimierung**
+10. Warum ist das Rucksackproblem in der Praxis oft schwierig zu lösen?
+    - Weil reale Bedingungen wie **begrenzte Stückzahlen**, **irrationale Maße** oder **dreidimensionale Modelle** es in die Klasse der **NP-vollständigen Probleme** überführen – dafür gibt es (derzeit) keine effizienten Algorithmen.
