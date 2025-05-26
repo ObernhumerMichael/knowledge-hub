@@ -1,5 +1,5 @@
 import type { Config } from '@docusaurus/types';
-import type * as Preset from '@docusaurus/preset-classic';
+import * as Preset from '@docusaurus/preset-classic';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 import { mocha, latte } from './src/theme/prism-catppuccin';
@@ -60,6 +60,10 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     // image: 'img/docusaurus-social-card.jpg',
+    colorMode: {
+      defaultMode: "dark",
+      respectPrefersColorScheme: true,
+    },
     navbar: {
       title: 'Knowledge Hub',
       logo: {
@@ -93,7 +97,7 @@ const config: Config = {
       darkTheme: mocha,
     },
     mermaid: {
-      theme: { light: 'base', dark: 'dark' }, // just a placeholder, will be overwritten dynamically
+      theme: { light: 'base', dark: 'base' }, // just a placeholder, will be overwritten dynamically
     },
   } satisfies Preset.ThemeConfig,
 };

@@ -67,3 +67,27 @@ This quiz is work in progress.
    - Dream time feels longer than real time - due to slow replay of memories in REM.
 1. How do sleep cycles change over the night?
    - Early cycles are NREM-rich, later ones are REM-rich.
+
+### Ape Beds, Dinosaurs, and Napping with Half a Brain
+
+1. How far back in evolution does sleep go?
+    - Sleep likely predates vertebrates-seen even in worms and primitive animals.
+1. Do all animals experience REM sleep?
+    - No. Only mammals and birds have true REM sleep; reptiles and aquatic mammals show limited or altered forms.
+1. What is unihemispheric sleep and which species have it?
+    - Sleeping with one brain hemisphere at a time-seen in dolphins, whales, and birds for survival reasons.
+1. Why do dolphins and seals lack REM sleep in the ocean?
+    - REM causes full-body paralysis, which would be fatal while swimming.
+1. What’s the difference between modern and natural human sleep?
+    - Natural: **biphasic** (night + nap), ~7-8 hours total.
+    - Modern: **monophasic**, often < 7 hours, later onset, no naps.
+1. What health effects result from abandoning biphasic sleep?
+   - Increased risk of cardiovascular disease and early death, as seen in modern Greece after siesta decline.
+1. Why do humans have more REM sleep than other primates?
+   - Ground sleeping made deep REM safer. REM supports complex brains, creativity, and emotional processing.
+1. How does REM contribute to human intelligence?
+   - Facilitates emotional regulation, social bonding, and creative problem-solving.
+1. What evidence supports the evolutionary importance of REM sleep?
+   - Its independent evolution in birds and mammals, widespread recovery after deprivation, and role in survival-critical traits.
+1. Can sleep deprivation ever be avoided?
+    - Only in rare evolutionary exceptions (e.g. migrating birds), but even they find micro-sleep strategies. **Sleep is non-negotiable.**
