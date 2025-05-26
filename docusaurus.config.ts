@@ -47,6 +47,7 @@ const config: Config = {
           // enable math support
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
+          showLastUpdateTime: true,
         },
         blog: false,
         theme: {
