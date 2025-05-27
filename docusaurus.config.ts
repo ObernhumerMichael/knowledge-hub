@@ -98,7 +98,24 @@ const config: Config = {
       darkTheme: mocha,
     },
     mermaid: {
-      theme: { light: 'base', dark: 'base' }, // just a placeholder, will be overwritten dynamically
+      theme: { light: 'light', dark: 'base' },
+      options: {
+        themeVariables: {
+          darkmode: true,
+          background: '#1e1e2e',
+          primaryColor: '#181825',
+          primaryTextColor: '#cdd6f4',
+          primaryBorderColor: '#cba6f7',
+          lineColor: '#cba6f7',
+          textColor: '#cdd6f4',
+          tertiaryColor: '#313244',
+          nodeTextColor: '#cdd6f4',
+          edgeLabelBackground: '#1e1e2e',
+          clusterBkg: '#313244',
+          clusterBorder: '#b4befe',
+          titleColor: '#cdd6f4',
+        },
+      },
     },
   } satisfies Preset.ThemeConfig,
 };
