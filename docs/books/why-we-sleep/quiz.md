@@ -91,3 +91,26 @@ This quiz is work in progress.
    - Its independent evolution in birds and mammals, widespread recovery after deprivation, and role in survival-critical traits.
 1. Can sleep deprivation ever be avoided?
     - Only in rare evolutionary exceptions (e.g. migrating birds), but even they find micro-sleep strategies. **Sleep is non-negotiable.**
+
+### Changes in Sleep Across the Life Span
+
+1. Why is REM sleep so abundant before birth?
+    - It supports **synaptogenesis**, helping build the brain's neural network.
+2. How does alcohol affect fetal sleep?
+    - It reduces **REM sleep quality & quantity**, potentially harming brain development and increasing neurodevelopmental risks.
+3. What is the shift in sleep pattern during early childhood?
+    - From **polyphasic** (many naps) to **monophasic** (one main sleep + maybe 1 nap), with **circadian rhythm maturing**.
+4. Why is deep NREM sleep important in adolescence?
+    - It supports **synaptic pruning**, optimizing brain circuits for reasoning and emotional control.
+5. What is the circadian rhythm shift in teenagers?
+    - Melatonin release happens later, so they fall asleep and wake later → **biologically driven**, not laziness.
+6. How does aging affect deep sleep?
+    - Massive decline in deep NREM due to **atrophy in frontal brain areas** that generate sleep.
+7. Why do older adults have more fragmented sleep?
+    - Causes: weak bladder, medications, less melatonin, and lighter sleep.
+8. Do older adults really need less sleep?
+    - No. Studies show they **need just as much**-they just can’t **generate** it effectively.
+9. Can anything help elderly sleep better?
+    - Yes: **light therapy**, **melatonin**, and promising **brain stimulation techniques**.
+10. What’s the health impact of poor sleep in old age?
+    - Linked to **memory loss, depression, falls, heart disease, and dementia**. It’s a **major health concern**.
