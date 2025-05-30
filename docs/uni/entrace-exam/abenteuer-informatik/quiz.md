@@ -75,3 +75,26 @@ Für jede Kiste A (von klein nach groß):
     - **Budgetierung, Containerstauung, Portfolio-Optimierung**
 10. Warum ist das Rucksackproblem in der Praxis oft schwierig zu lösen?
     - Weil reale Bedingungen wie **begrenzte Stückzahlen**, **irrationale Maße** oder **dreidimensionale Modelle** es in die Klasse der **NP-vollständigen Probleme** überführen – dafür gibt es (derzeit) keine effizienten Algorithmen.
+
+## Kapitel 9 - Paketpost
+
+1. **Warum funktioniert Kommunikation im kleinen Kreis besser als im großen?**
+   - Weil weniger Überschneidungen und Störungen auftreten. In großen Gruppen stört man sich gegenseitig.
+2. **Was ist die Aufgabe von Kommunikatoren im Hofbeispiel?**
+   - Sie übermitteln Nachrichten zwischen getrennten Gruppen - vergleichbar mit Routern im Internet.
+3. **Wie ist eine IP-Adresse aufgebaut und wozu dient sie?**
+   - Sie besteht aus vier Zahlenblöcken (z. B. 192.168.0.1) und dient der eindeutigen Adressierung von Geräten im Netzwerk.
+4. **Wie funktionieren Router?**
+   - Router entscheiden anhand von **Routingtabellen**, wohin ein Paket weitergeleitet wird.
+5. **Was passiert, wenn ein Paket keine gültige Route hat?**
+   - Es wird verworfen - ähnlich wie ein Brief mit falscher Adresse nicht zugestellt wird.
+6. **Wozu dient DNS?**
+   - Es übersetzt **Namen** (z. B. `google.com`) in **IP-Adressen**, damit Computer kommunizieren können.
+7. **Was ist das OSI-Modell?**
+   - Ein 7-Schichten-Modell zur Beschreibung der Netzwerkkommunikation - vom physikalischen Signal bis zur Anwendung.
+8. **Was passiert, wenn Datenpakete in falscher Reihenfolge ankommen?**
+   - Die Sitzungsschicht (OSI 5) ordnet die Pakete wieder korrekt zu einer Verbindung zu.
+9. **Warum ist Modellbildung wichtig in der Informatik?**
+   - Modelle helfen, komplexe Systeme **überschaubar und verständlich** zu machen.
+10. **Wie macht das Internet Gebrauch von Paradigmen menschlicher Organisation?**
+    - Durch klare Zuständigkeiten (Router), Adresssysteme (IP), Vermittler (DNS), und Hierarchien - wie bei der Post oder im Hofstaat.
