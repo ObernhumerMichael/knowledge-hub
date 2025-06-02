@@ -98,3 +98,26 @@ Für jede Kiste A (von klein nach groß):
    - Modelle helfen, komplexe Systeme **überschaubar und verständlich** zu machen.
 10. **Wie macht das Internet Gebrauch von Paradigmen menschlicher Organisation?**
     - Durch klare Zuständigkeiten (Router), Adresssysteme (IP), Vermittler (DNS), und Hierarchien - wie bei der Post oder im Hofstaat.
+
+## Kapitel 11 - Ordnung im Chaos
+
+1. Warum ist Ordnung im Computerspeicher wichtig?
+    - Weil geordnete Daten schneller durchsucht werden können. Bei sortierten Daten lässt sich etwa die binäre Suche anwenden, die deutlich effizienter ist als eine sequentielle Suche.
+2. Was versteht man unter sequentieller Suche?
+    - Die sequentielle Suche überprüft alle Elemente nacheinander, bis das gesuchte gefunden ist. Im Schnitt müssen etwa die Hälfte aller Elemente durchlaufen werden.
+3. Wie funktioniert die binäre Suche?
+    - Die binäre Suche setzt voraus, dass die Daten sortiert sind. Sie beginnt in der Mitte und entscheidet je nach Vergleichsergebnis, ob die gesuchte Information links oder rechts zu finden ist. So wird der Suchbereich mit jedem Schritt halbiert.
+4. Was ist Hashing und wofür wird es eingesetzt?
+    - Hashing ist eine Methode zur schnellen Speicherung und Wiederauffindung von Daten. Mithilfe einer Hashfunktion wird aus einem Schlüssel direkt die Speicherposition berechnet.
+5. Was versteht man unter einer Hashfunktion?
+    - Eine Hashfunktion berechnet aus einem Schlüssel (z. B. einer Zahl) eine Speicheradresse. Zum Beispiel: `h(s) = s mod 10` legt fest, dass der Schlüssel in eine von 10 Speicherzellen eingeordnet wird.
+6. Was passiert bei Kollisionen im Hashing?
+    - Wenn zwei Daten denselben Speicherplatz beanspruchen, spricht man von einer Kollision. Diese wird durch Kollisionsbehandlung gelöst, zum Beispiel durch das Suchen der nächsten freien Speicherstelle (lineares Sondieren).
+7. Warum benötigt Hashing mehr Speicherplatz als Sortieren?
+    - Weil Hashing am besten funktioniert, wenn der Speicher nicht zu stark ausgelastet ist – idealerweise unter 80 %. So sinkt die Wahrscheinlichkeit von Kollisionen und der Zugriff bleibt schnell.
+8. Was ist ein Pseudozufallszahlengenerator?
+    - Ein Verfahren, das mit einer festen Startzahl und einer mathematischen Formel eine scheinbar zufällige Zahlenfolge erzeugt. Diese Zahlen sind nicht wirklich zufällig, aber gleichmäßig verteilt.
+9. Warum sind Pseudozufallszahlen im Computer notwendig?
+    - Weil Computer deterministische Maschinen sind und echten Zufall nicht erzeugen können. Für viele Anwendungen reichen gut gemachte Pseudozufallszahlen jedoch aus.
+10. Was ist der Mid-Square-Generator und warum ist er ungeeignet?
+    - Er quadriert eine Zahl und verwendet die mittleren Ziffern als nächste Zufallszahl. Er liefert jedoch oft kurze, sich wiederholende Zahlenfolgen und ist daher für viele Anwendungen unbrauchbar.
