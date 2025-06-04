@@ -74,7 +74,7 @@ description: "Shows how sleep before and after learning improves memory formatio
     - It boosts learning ability by about **20%**, thanks to stage 2 NREM and sleep spindles.
 3. **Which sleep stage is key for memorizing facts?**
     - **Deep NREM sleep**-especially in the early part of the night.
-4. **What do sleep spindles do?**
+4. **What do sleep spindles do (regarding memory)?**
     - Short bursts of brain activity during stage 2 NREM that help transfer and organize memories.
 5. **Can sleep help us forget?**
     - Yes-**NREM sleep spindles** allow the brain to **filter out irrelevant info**, optimizing recall efficiency.

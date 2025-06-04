@@ -114,3 +114,28 @@ This quiz is work in progress.
     - Yes: **light therapy**, **melatonin**, and promising **brain stimulation techniques**.
 10. What’s the health impact of poor sleep in old age?
     - Linked to **memory loss, depression, falls, heart disease, and dementia**. It’s a **major health concern**.
+
+## Why Should You Sleep
+
+### Your Mother and Shakespeare Knew
+
+1. What is the main role of NREM sleep for memory?
+    - It consolidates memories by transferring them from the hippocampus to the cortex, freeing space for new learning.
+2. How does a nap affect learning capacity?
+    - It boosts learning ability by about **20%**, thanks to stage 2 NREM and sleep spindles.
+3. Which sleep stage is key for memorizing facts?
+    - **Deep NREM sleep**-especially in the early part of the night.
+4. What do sleep spindles do (regarding memory)?
+    - Short bursts of brain activity during stage 2 NREM that help transfer and organize memories.
+5. Can sleep help us forget?
+    - Yes-**NREM sleep spindles** allow the brain to **filter out irrelevant info**, optimizing recall efficiency.
+6. What is targeted memory reactivation (TMR)?
+    - A method where **sound cues** during sleep re-trigger specific memories, enhancing only those.
+7. What’s the role of REM in creativity?
+    - REM helps connect unrelated memories, enhancing **creative problem-solving**.
+8. What kind of sleep enhances motor skill performance?
+    - **Late-stage NREM sleep with sleep spindles**, especially in the last 2 hours of sleep.
+9. How does sleep loss affect athletic performance?
+    - Reduces stamina, strength, coordination, and increases **injury risk** by up to 60%.
+10. How does the brain choose what to remember or forget during sleep?
+    - Through **tags** (conscious intention or emotional salience) and interaction between hippocampus and frontal cortex during spindles.
