@@ -121,3 +121,32 @@ Für jede Kiste A (von klein nach groß):
     - Weil Computer deterministische Maschinen sind und echten Zufall nicht erzeugen können. Für viele Anwendungen reichen gut gemachte Pseudozufallszahlen jedoch aus.
 10. Was ist der Mid-Square-Generator und warum ist er ungeeignet?
     - Er quadriert eine Zahl und verwendet die mittleren Ziffern als nächste Zufallszahl. Er liefert jedoch oft kurze, sich wiederholende Zahlenfolgen und ist daher für viele Anwendungen unbrauchbar.
+
+## Kapitel 12 – Mit Sicherheit
+
+1. Was ist eine Transpositions-Chiffre?
+    - Eine Verschlüsselung, bei der die Buchstaben des Klartexts in der Reihenfolge vertauscht werden, z. B. mit der Skytale der Spartaner.
+1. Wie funktioniert der Cäsar-Code?,
+    - Jeder Buchstabe wird durch den ersetzt, der eine bestimmte Anzahl an Positionen später im Alphabet steht.
+1. Was ist eine Substitutions-Chiffre?,
+    - Eine Verschlüsselung, bei der jeder Buchstabe durch einen anderen ersetzt wird, aber an der gleichen Textstelle bleibt.
+1. Was unterscheidet symmetrische von asymmetrischer Verschlüsselung?
+    - Bei symmetrischer Verschlüsselung wird derselbe Schlüssel für Ver- und Entschlüsselung genutzt. Bei asymmetrischer gibt es ein Schlüsselpaar (öffentlich/privat).
+1. Warum ist asymmetrische Verschlüsselung wichtig für das Internet?
+    - Sie ermöglicht sichere Kommunikation mit Unbekannten, ohne vorher einen gemeinsamen Schlüssel auszutauschen.
+1. Was ist das Hauptproblem bei der asymmetrischen Verschlüsselung im Internet?
+    - Die Authentizität des öffentlichen Schlüssels muss überprüfbar sein – sonst könnte ein Angreifer (wie Spike) sich dazwischenschalten.
+1. Welche Rolle hat eine Zertifizierungsinstanz wie Zoe im Buchbeispiel?
+    - Sie bestätigt, dass ein öffentlicher Schlüssel wirklich zu einer bestimmten Person (z. B. Vera) gehört.
+1. Was bedeutet „Vertraulichkeit“ im Kontext digitaler Kommunikation?
+    - Nur der beabsichtigte Empfänger kann die Nachricht lesen.
+1. Was bedeutet „Authentizität“ bei digitalen Nachrichten?
+    - Man kann sicherstellen, dass eine Nachricht tatsächlich vom angegebenen Absender stammt.
+1. Warum wird asymmetrische Verschlüsselung meist nur zu Beginn einer sicheren Sitzung verwendet?
+    - Weil sie rechnerisch aufwändiger ist. Danach wird auf schnellere symmetrische Verschlüsselung gewechselt.
+1. Warum ist ein sicher erzeugter Zufallswert für einen symmetrischen Schlüssel wichtig?
+    - Weil ein vorhersehbarer Schlüssel leicht erraten und damit die Verschlüsselung gebrochen werden kann.
+1. Was ist das RSA-Verfahren?
+    - Ein asymmetrisches Verschlüsselungsverfahren, das auf dem Problem der Primfaktorzerlegung basiert.
+1. Warum ist die Länge des Schlüssels wichtig für die Sicherheit?
+    - Je länger der Schlüssel, desto mehr Kombinationen müssen Hacker ausprobieren, um ihn zu knacken.
