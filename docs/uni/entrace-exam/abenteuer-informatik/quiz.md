@@ -150,3 +150,30 @@ Für jede Kiste A (von klein nach groß):
     - Ein asymmetrisches Verschlüsselungsverfahren, das auf dem Problem der Primfaktorzerlegung basiert.
 1. Warum ist die Länge des Schlüssels wichtig für die Sicherheit?
     - Je länger der Schlüssel, desto mehr Kombinationen müssen Hacker ausprobieren, um ihn zu knacken.
+
+## Kapitel 14 - InformaGik
+
+1. Welchen Zweck erfüllen redundante Daten in der Informatik?
+    - Redundante Daten erhöhen nicht den Informationsgehalt eines Datensatzes, ermöglichen aber, dass eine bestimmte Anzahl von Fehlern erkannt und unter Umständen auch korrigiert werden kann.
+1. Was versteht man unter Hamming-Distanz?
+    - Die Hamming-Distanz ist die Anzahl der Stellen, an denen sich zwei Codeworte einer Codetabelle unterscheiden. Die kleinste Hamming-Distanz zwischen zwei beliebigen Codeworten bestimmt die Hamming-Distanz des gesamten Codes.
+1. Wie lässt sich der Fehlerkorrektur-Trick mit dem 6x6-Feld durchführen, wenn eine Karte umgedreht wurde?
+    - Nachdem eine Karte umgedreht wurde, gibt es genau eine Zeile und eine Spalte mit einer ungeraden Anzahl von X. Die gesuchte Karte ist diejenige im Schnittpunkt dieser Zeile und Spalte.
+1. Welche Methode zur Fehlererkennung wird bei Kreditkartennummern verwendet?
+    - Bei Kreditkartennummern wird jede Ziffer abwechselnd mit 2 und mit 1 multipliziert. Die einzelnen Ziffern der Ergebnisse werden addiert, und die Summe muss ein Vielfaches von 10 sein.
+1. Welche Art von Zahlendrehern werden beim Kreditkarten-Verfahren nicht erkannt?
+    - Zahlendreher bei den Ziffern 0 und 9 werden nicht erkannt, da sie auf jeder Position den gleichen Teil zur Prüfsumme beitragen.
+1. Wie funktioniert die Prüfziffernberechnung beim EU-Personalausweis oder Reisepass für einen Block von Ziffern?
+    - Die Ziffern werden abwechselnd nacheinander mit 7, 3 und 1 multipliziert. Die Prüfziffer ist die letzte Ziffer der Summe dieser Produkte. Buchstaben spielen dabei keine Rolle.
+1. Welchen Nachteil hat es, wenn bei einem 6x6-Feld zwei Kärtchen umgedreht werden?
+    - Wenn zwei Kärtchen umgedreht werden, kann man zwar erkennen, dass Fehler vorliegen, aber man kann nicht mit Gewissheit sagen, welche Karten umgedreht wurden. Eine Korrektur könnte die Situation sogar verschlimmern, indem nicht zwei, sondern vier Kärtchen falsch liegen.
+1. Warum ist es notwendig, Fehler bei der Datenspeicherung, wie zum Beispiel auf einer Blu-Ray-Disc, zu akzeptieren und zu korrigieren?
+    - Bei der Speicherung großer Datenmengen auf engstem Raum, wie bei Blu-Ray-Discs, sind winzige Partikel wie Staubkörner unvermeidbar und können viele Informationseinheiten unlesbar machen. Daher müssen Fehler erkannt und korrigiert werden.
+1. Was ist der Unterschied zwischen Fehlererkennung und Fehlerkorrektur in Bezug auf die Anzahl der Fehler?
+    - Wenn man Fehler korrigiert, kann man einen Fehler korrigieren und zwei Fehler noch erkennen. Verzichtet man auf die Korrektur, kann man bis zu drei Fehler erkennen. Die Korrektur funktioniert nur mit einer kleineren Anzahl von Fehlern, und bei mehr Fehlern muss man eine falsche Korrektur in Kauf nehmen.
+1. Wie wird die Speicherkapazität bei DVDs oder Blu-Ray-Discs für die Fehlerkorrektur genutzt?
+    - Bei DVDs oder Blu-Ray-Discs werden etwa 87% der möglichen Speicherkapazität für "echte Daten" genutzt, der Rest (13%) wird für redundante Daten investiert, die eine umfangreiche Fehlerkorrektur ermöglichen.
+1. Welchen Vorteil bietet eine höhere Hamming-Distanz eines Codes?
+    - Codes mit einer höheren Hamming-Distanz sind robuster gegenüber Fehlern, da die korrekten Codeworte so unterschiedlich sind, dass gegebenenfalls auch mehrere Fehler erkannt und korrigiert werden können.
+1. Warum wird bei Audio-CDs im Musikteil auf Fehlerkorrektur verzichtet?
+    - Bei Audio-CDs wird auf Fehlerkorrektur verzichtet, da die Entwickler eine kurze Unterbrechung oder ein winziges Knistern als akzeptabel ansahen.
