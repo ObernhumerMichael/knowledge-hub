@@ -5,6 +5,8 @@ description: "This is a quiz I created based on the key concepts from the book."
 
 # Quiz
 
+[Download this quiz for Anki](/uni/entrance_exam/abenteuer_informatik/assets/abenteuer_informatik.apkg)
+
 ## Kapitel 2 - Ordnung muss sein
 
 1. **Was versteht man in diesem Kapitel unter der „Problemgröße“ beim Sortieren?**
@@ -177,3 +179,20 @@ Für jede Kiste A (von klein nach groß):
     - Codes mit einer höheren Hamming-Distanz sind robuster gegenüber Fehlern, da die korrekten Codeworte so unterschiedlich sind, dass gegebenenfalls auch mehrere Fehler erkannt und korrigiert werden können.
 1. Warum wird bei Audio-CDs im Musikteil auf Fehlerkorrektur verzichtet?
     - Bei Audio-CDs wird auf Fehlerkorrektur verzichtet, da die Entwickler eine kurze Unterbrechung oder ein winziges Knistern als akzeptabel ansahen.
+
+## Kapitel 15 - Allmächtiger Computer!?
+
+1. Sind Computer allmächtig, wenn man sie nur richtig programmiert?
+    - Nein. Es gibt Probleme, die Computer entweder gar nicht oder nur mit unrealistisch hohem Aufwand lösen können - unabhängig vom Programm.
+1. Warum sind einige Probleme wie das Affenpuzzle nicht praktisch lösbar?
+    - Weil die Anzahl möglicher Kombinationen so stark wächst, dass selbst mit allen Computern der Welt die Lösung unendlich lange dauern würde.
+1. Was ist „Branch and Bound“?
+    - Eine Technik, bei der man während des Ausprobierens frühzeitig falsche Lösungswege erkennt und verwirft, um Rechenaufwand zu sparen.
+1. Kann ein Computer die Frage ob man mit bestimmten Puzzleteilen (Kacheln) prinzipiell beliebig große Flächen auslegen kann, immer zuverlässig beantworten?
+    - Nein. Dieses sogenannte Domino-Problem ist nicht entscheidbar, d. h. es gibt Instanzen, für die kein Computer je eine „JA“ oder „NEIN“-Antwort geben kann.
+1. Was ist das Halteproblem?
+    - Die Frage, ob ein beliebiges Computerprogramm bei jeder Eingabe irgendwann anhält oder in einer Endlosschleife festhängt.
+1. Kann ein Computer das Halteproblem lösen?
+    - Nein. Es wurde bewiesen, dass kein Programm existieren kann, das für alle anderen Programme korrekt entscheidet, ob sie terminieren oder nicht.
+1. Was zeigt das Beispiel von „PROGRAMM C“ im Text?
+    - Dass die Annahme eines universellen „HÄLTS?“-Programms zu einem logischen Widerspruch führt - es kann also nicht existieren.
