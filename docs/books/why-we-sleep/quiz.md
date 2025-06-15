@@ -139,3 +139,26 @@ This quiz is work in progress.
     - Reduces stamina, strength, coordination, and increases **injury risk** by up to 60%.
 10. How does the brain choose what to remember or forget during sleep?
     - Through **tags** (conscious intention or emotional salience) and interaction between hippocampus and frontal cortex during spindles.
+
+### Too Extreme for the Guinness Book of World Records
+
+1. What is a microsleep and why is it dangerous?
+    - A momentary loss of consciousness (1-2 seconds); it disables perception and motor control - deadly while driving.
+2. How little sleep is needed to impair you like being drunk?
+    - Just 19 hours awake makes you as impaired as someone legally drunk.
+3. What did Dinges' research reveal about 6 hours of sleep?
+    - Just 10 days of 6 hours/night equals performance impairment of one full night without sleep.
+4. Can we recover sleep debt with extra weekend sleep?
+    - No. Even after 3 nights of recovery, performance does not return to baseline.
+5. How does sleep loss affect emotional regulation?
+    - Increases amygdala reactivity (fear/anger), weakens control from the prefrontal cortex -> impulsivity and emotional outbursts.
+6. What psychiatric illnesses are connected to poor sleep?
+    - All major ones: depression, bipolar disorder, anxiety, PTSD, schizophrenia.
+7. How does poor sleep contribute to Alzheimer’s?
+    - It increases amyloid buildup and disrupts deep NREM sleep, which normally clears toxins.
+8. What is the glymphatic system?
+    - Brain’s waste clearance system - cleans up amyloid during deep NREM sleep.
+9. Are power naps enough?
+    - No. They help short-term focus but do not restore full brain function, memory, or emotional stability.
+10. Is there a genetic trait for low-sleep tolerance?
+    - Yes, but extremely rare (\<0.01% of people). You’re more likely to be struck by lightning.
