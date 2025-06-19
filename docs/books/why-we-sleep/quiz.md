@@ -162,3 +162,27 @@ This quiz is work in progress.
     - No. They help short-term focus but do not restore full brain function, memory, or emotional stability.
 10. Is there a genetic trait for low-sleep tolerance?
     - Yes, but extremely rare (\<0.01% of people). You’re more likely to be struck by lightning.
+
+### Cancer, Heart Attacks, and a Shorter Life
+
+1. How does sleep loss affect the heart?
+    - It increases heart rate, raises blood pressure, damages vessels, and risk of heart attacks/strokes.
+1. Can one bad night of sleep hurt your heart?
+    - Yes - even 1-2 hours less sleep = increased heart rate and blood pressure.
+1. How is sleep connected to diabetes?
+    - It impairs glucose regulation by causing insulin resistance - a pathway to type 2 diabetes.
+1. What happens to appetite hormones during sleep deprivation?
+    - less Leptin, more Ghrelin = increased hunger and overeating.
+1. Does sleep loss increase cancer risk?
+    - Yes - by weakening immune response and fueling inflammation and tumor metastasis.
+1. How is reproductive health affected?
+    - Men: lower testosterone, sperm count, testicle size.
+    - Women: less fertility hormones, more miscarriage, increased cycle irregularities.
+1. Why are vaccines less effective with poor sleep?
+    - The immune system produces fewer antibodies in sleep-deprived people.
+1. What is the link between sleep and genes?
+    - Sleep loss distorts expression of over 700 genes, affecting immunity, metabolism, and aging.
+1. What are telomeres, and how does sleep affect them?
+    - Telomeres protect chromosomes; sleep deprivation shortens them = accelerated aging.
+1. Why is the sympathetic nervous system harmful when overactive?
+    - It keeps the body in chronic “fight or flight,” promoting hypertension, inflammation, and organ damage.
