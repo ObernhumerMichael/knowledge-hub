@@ -186,3 +186,40 @@ This quiz is work in progress.
     - Telomeres protect chromosomes; sleep deprivation shortens them = accelerated aging.
 1. Why is the sympathetic nervous system harmful when overactive?
     - It keeps the body in chronic “fight or flight,” promoting hypertension, inflammation, and organ damage.
+
+## How and Why We Dream
+
+### Routinely Psychotic
+
+1. Why is REM sleep described as “routinely psychotic”?
+   - Because it mimics symptoms like hallucinations, delusions, and emotional instability - but safely during sleep.
+1. Which brain regions are more active during REM sleep?
+   - Visual cortex
+   - Motor cortex
+   - Amygdala & cingulate cortex (emotion)
+   - Hippocampus (memory)
+1. What brain region is suppressed during REM sleep, and why is that important?
+   - The prefrontal cortex, which controls logic and rationality, is deactivated - explaining why dreams are illogical.
+1. How did MRI technology help understand dreams?
+   - It allowed scientists to see brain activity in detail, predict dream types, and even decode dream content using waking visual templates.
+1. Do dreams replay your day?
+   - No. Only ~1-2% of dreams replay daily events; instead, they reflect emotional concerns (35-55%).
+
+## Dreaming as Overnight Therapy
+
+1. Is dreaming just a by-product of REM sleep?
+    - No. Scientific evidence shows dreaming has direct emotional benefits, especially for healing trauma.
+1. How does REM sleep soothe emotional memories?
+    - It reactivates emotional memories without stress hormones, letting the brain reprocess experiences safely.
+1. What did the MRI experiment on emotional pictures show?
+    - Sleep reduced amygdala activity and increased prefrontal control, lowering emotional reactions.
+1. How did Cartwright’s study show dream content matters?
+    - Only patients who dreamed specifically about their trauma recovered from depression.
+1. Why do PTSD patients have recurring nightmares?
+    - Their high noradrenaline levels prevent REM from doing its emotional detox job - dreams repeat like a broken record.
+1. What is prazosin and why does it help PTSD?
+    - It reduces noradrenaline in the brain, restoring REM sleep’s ability to process trauma and reduce nightmares.
+1. How does REM sleep affect emotion recognition in faces?
+    - REM “re-tunes” emotional sensitivity - without it, people misinterpret faces and over-perceive threat.
+1. What happens when REM sleep is cut short, like in early school schedules?
+    - Teens are deprived of the critical REM sleep needed for emotional regulation, social decoding, and mental health.
