@@ -205,7 +205,7 @@ This quiz is work in progress.
 1. Do dreams replay your day?
    - No. Only ~1-2% of dreams replay daily events; instead, they reflect emotional concerns (35-55%).
 
-## Dreaming as Overnight Therapy
+### Dreaming as Overnight Therapy
 
 1. Is dreaming just a by-product of REM sleep?
     - No. Scientific evidence shows dreaming has direct emotional benefits, especially for healing trauma.
@@ -223,3 +223,20 @@ This quiz is work in progress.
     - REM “re-tunes” emotional sensitivity - without it, people misinterpret faces and over-perceive threat.
 1. What happens when REM sleep is cut short, like in early school schedules?
     - Teens are deprived of the critical REM sleep needed for emotional regulation, social decoding, and mental health.
+
+### Dream Creativity and Dream Control
+
+1. What is the role of REM sleep in creativity?
+    - It blends and recombines memories into new patterns, enabling unique insights and problem-solving.
+1. Why is the brain more creative after REM sleep?
+    - It prefers distant, non-obvious connections and skips over predictable links.
+1. What did the VR maze study prove?
+    - Dream content matters: people who dreamed of maze-related themes improved far more on navigation tasks.
+1. What is the difference between knowledge and wisdom according to this chapter?
+    - Knowledge = isolated facts; wisdom = seeing connections between them. REM helps convert the former into the latter.
+1. How did Edison harness dream creativity?
+    - He napped holding metal balls that woke him as REM began, allowing him to record creative ideas instantly.
+1. What is lucid dreaming?
+    - Awareness and control of dreams during REM sleep - now proven scientifically using MRI and eye signals.
+1. Is lucid dreaming evolutionarily beneficial?
+    - Unclear - most people don’t do it, but it might hint at future cognitive capabilities.
