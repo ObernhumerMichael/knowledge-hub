@@ -1,0 +1,8 @@
+{
+  "label": "Ethical Hacking",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "This is my personal handbook about ethical hacking. It contains anything from theory, snippets, docs and much more."
+  }
+}

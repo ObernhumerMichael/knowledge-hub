@@ -1,0 +1,8 @@
+{
+  "label": "Introduction",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "This section is the introduction to my handbook about ethical hacking."
+  }
+}
